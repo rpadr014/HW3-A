@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace HE3_AControlLibrary
 {
-    public partial class baseForm : Form
+    public partial class BaseForm : Form
     {
         private bool mouseDown;
         private Point lastLocation;
 
-        public baseForm()
+        public BaseForm()
         {
             InitializeComponent();
         }
@@ -42,9 +42,15 @@ namespace HE3_AControlLibrary
             mouseDown = false;
         }
 
-        private void contextMenu_Click(object sender, EventArgs e)
+        private void closeMenuItem_Click(object sender, EventArgs e)
         {
-            colorDialog.ShowDialog();
+            this.Close();
+        }
+
+        private void colorMenuItem_Click(object sender, EventArgs e)
+        {
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+                this.BackColor = colorDialog.Color;
         }
     }
 }

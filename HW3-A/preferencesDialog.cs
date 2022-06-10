@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace HW3_A
 {
-    public partial class preferenceForm : HE3_AControlLibrary.baseDialog
+    public partial class preferenceForm : HE3_AControlLibrary.BaseDialog
     {
         public event EventHandler Apply;
         public static int rHeight { get; set;}

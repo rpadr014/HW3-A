@@ -1,6 +1,6 @@
 ﻿namespace HE3_AControlLibrary
 {
-    partial class baseDialog
+    partial class BaseDialog
     {
         /// <summary>
         /// Required designer variable.
@@ -61,7 +61,7 @@
             this.panel1.Size = new System.Drawing.Size(800, 219);
             this.panel1.TabIndex = 2;
             // 
-            // baseDialog
+            // BaseDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -69,7 +69,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.courseControl1);
             this.Controls.Add(this.nameControl1);
-            this.Name = "baseDialog";
+            this.Name = "BaseDialog";
             this.Text = "Base Dialog";
             this.ResumeLayout(false);
 
