@@ -34,9 +34,9 @@
             this.colorTool = new System.Windows.Forms.ToolStripMenuItem();
             this.colorDialog = new System.Windows.Forms.ColorDialog();
             this.controlGroup = new System.Windows.Forms.GroupBox();
-            this.nameControl = new HE3_AControlLibrary.NameControl();
-            this.courseControl = new HE3_AControlLibrary.CourseControl();
             this.mainMidPanel = new System.Windows.Forms.Panel();
+            this.courseControl = new HE3_AControlLibrary.CourseControl();
+            this.nameControl = new HE3_AControlLibrary.NameControl();
             this.contextMenu.SuspendLayout();
             this.controlGroup.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +59,7 @@
             // colorTool
             // 
             this.colorTool.Name = "colorTool";
-            this.colorTool.Size = new System.Drawing.Size(180, 22);
+            this.colorTool.Size = new System.Drawing.Size(103, 22);
             this.colorTool.Text = "Color";
             this.colorTool.Click += new System.EventHandler(this.colorToolMenuItem_Click);
             // 
@@ -77,15 +77,14 @@
             this.controlGroup.TabStop = false;
             this.controlGroup.Text = "group box";
             // 
-            // nameControl
+            // mainMidPanel
             // 
-            this.nameControl.BackColor = System.Drawing.Color.Azure;
-            this.nameControl.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.nameControl.ForeColor = System.Drawing.Color.Black;
-            this.nameControl.Location = new System.Drawing.Point(3, 457);
-            this.nameControl.Name = "nameControl";
-            this.nameControl.Size = new System.Drawing.Size(1055, 168);
-            this.nameControl.TabIndex = 0;
+            this.mainMidPanel.BackColor = System.Drawing.Color.Transparent;
+            this.mainMidPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainMidPanel.Location = new System.Drawing.Point(3, 73);
+            this.mainMidPanel.Name = "mainMidPanel";
+            this.mainMidPanel.Size = new System.Drawing.Size(1055, 384);
+            this.mainMidPanel.TabIndex = 2;
             // 
             // courseControl
             // 
@@ -96,14 +95,15 @@
             this.courseControl.Size = new System.Drawing.Size(1055, 57);
             this.courseControl.TabIndex = 1;
             // 
-            // mainMidPanel
+            // nameControl
             // 
-            this.mainMidPanel.BackColor = System.Drawing.Color.Transparent;
-            this.mainMidPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainMidPanel.Location = new System.Drawing.Point(3, 73);
-            this.mainMidPanel.Name = "mainMidPanel";
-            this.mainMidPanel.Size = new System.Drawing.Size(1055, 384);
-            this.mainMidPanel.TabIndex = 2;
+            this.nameControl.BackColor = System.Drawing.Color.Azure;
+            this.nameControl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.nameControl.ForeColor = System.Drawing.Color.Black;
+            this.nameControl.Location = new System.Drawing.Point(3, 457);
+            this.nameControl.Name = "nameControl";
+            this.nameControl.Size = new System.Drawing.Size(1055, 168);
+            this.nameControl.TabIndex = 0;
             // 
             // mainForm
             // 

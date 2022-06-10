@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="preferencesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="preferencesDialog.designer.cs">
+      <DependentUpon>preferencesDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="preferencesDialog.resx">
+      <DependentUpon>preferencesDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
     </EmbeddedResource>

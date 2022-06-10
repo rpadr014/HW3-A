@@ -14,9 +14,23 @@ namespace HW3_A
     {
         private bool mouseDown;
         private Point lastLocation;
+        private int rectangleHeight;
+        private int ellipticWidth;
+        private float ratio;
         public mainForm()
         {
             InitializeComponent();
+
+            preferenceForm preferenceForm = new preferenceForm();
+            preferenceForm.Apply += PreferenceForm_Apply;
+            preferenceForm.Show();
+        }
+
+        private void PreferenceForm_Apply(object sender, EventArgs e)
+        {
+            rectangleHeight = preferenceForm.rHeight;
+            ellipticWidth = preferenceForm.eWidth;
+            ratio = preferenceForm.ratio;
         }
 
         private void mainForm_MouseDown(object sender, MouseEventArgs e)
