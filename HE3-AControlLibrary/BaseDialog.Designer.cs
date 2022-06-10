@@ -60,7 +60,7 @@
             this.panel1.Size = new System.Drawing.Size(800, 219);
             this.panel1.TabIndex = 2;
             // 
-            // Form1
+            // baseDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -68,8 +68,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.courseControl1);
             this.Controls.Add(this.nameControl1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "baseDialog";
+            this.Text = "Base Dialog";
             this.ResumeLayout(false);
 
         }
