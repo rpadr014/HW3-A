@@ -36,6 +36,16 @@ namespace HW3_A
             ratio = preferenceForm.ratio;
         }
 
+        private void mToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void preferencesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void modallyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             preferenceForm preferenceForm = createPreferenceForm();

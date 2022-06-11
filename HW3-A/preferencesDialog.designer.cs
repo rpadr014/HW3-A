@@ -71,7 +71,7 @@
             131072});
             this.rNum.Location = new System.Drawing.Point(404, 139);
             this.rNum.Maximum = new decimal(new int[] {
-            4,
+            2000,
             0,
             0,
             0});
@@ -110,6 +110,7 @@
             0,
             0,
             0});
+            this.hNum.ValueChanged += new System.EventHandler(this.hNum_ValueChanged);
             // 
             // wNum
             // 
@@ -128,7 +129,7 @@
             this.wNum.Size = new System.Drawing.Size(120, 20);
             this.wNum.TabIndex = 9;
             this.wNum.Value = new decimal(new int[] {
-            200,
+            100,
             0,
             0,
             0});
@@ -217,6 +218,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "preferenceForm";
             this.Text = "Preference Dialog";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.preferenceForm_FormClosing);
