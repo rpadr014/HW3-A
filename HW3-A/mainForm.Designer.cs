@@ -1,4 +1,6 @@
-﻿namespace HW3_A
+﻿using System.Windows.Forms;
+
+namespace HW3_A
 {
     partial class mainForm
     {
@@ -45,6 +47,9 @@
             this.mToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
+
+            this.FormClosing += MainForm_FormClosing;
+
             // 
             // menuStrip1
             // 
@@ -107,6 +112,7 @@
             this.closeApplicationToolStripMenuItem.Name = "closeApplicationToolStripMenuItem";
             this.closeApplicationToolStripMenuItem.Size = new System.Drawing.Size(349, 34);
             this.closeApplicationToolStripMenuItem.Text = "Close Application";
+            this.closeApplicationToolStripMenuItem.Click += CloseApplicationToolStripMenuItem_Click;
             // 
             // openPreferencesToolStripMenuItem
             // 
@@ -154,6 +160,24 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void CloseApplicationToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            var res = MessageBox.Show(
+                "Close the application?",
+                "Are you sure?",
+                MessageBoxButtons.YesNo);
+
+            if(res == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
 
         #endregion
