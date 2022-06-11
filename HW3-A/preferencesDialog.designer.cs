@@ -63,29 +63,75 @@
             // 
             // rNum
             // 
+            this.rNum.DecimalPlaces = 2;
             this.rNum.Increment = new decimal(new int[] {
             10,
             0,
             0,
             131072});
             this.rNum.Location = new System.Drawing.Point(404, 139);
+            this.rNum.Maximum = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.rNum.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.rNum.Name = "rNum";
             this.rNum.Size = new System.Drawing.Size(120, 20);
             this.rNum.TabIndex = 11;
+            this.rNum.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // hNum
             // 
             this.hNum.Location = new System.Drawing.Point(405, 88);
+            this.hNum.Maximum = new decimal(new int[] {
+            2000,
+            0,
+            0,
+            0});
+            this.hNum.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.hNum.Name = "hNum";
             this.hNum.Size = new System.Drawing.Size(120, 20);
             this.hNum.TabIndex = 10;
+            this.hNum.Value = new decimal(new int[] {
+            200,
+            0,
+            0,
+            0});
             // 
             // wNum
             // 
             this.wNum.Location = new System.Drawing.Point(405, 41);
+            this.wNum.Maximum = new decimal(new int[] {
+            2000,
+            0,
+            0,
+            0});
+            this.wNum.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.wNum.Name = "wNum";
             this.wNum.Size = new System.Drawing.Size(120, 20);
             this.wNum.TabIndex = 9;
+            this.wNum.Value = new decimal(new int[] {
+            200,
+            0,
+            0,
+            0});
             // 
             // cancelButton
             // 
@@ -170,8 +216,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
+            this.KeyPreview = true;
             this.Name = "preferenceForm";
             this.Text = "Preference Dialog";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.preferenceForm_FormClosing);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyPressEvent);
             this.Controls.SetChildIndex(this.panel1, 0);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

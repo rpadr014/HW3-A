@@ -12,15 +12,20 @@ namespace HW3_A
 {
     public partial class mainForm : Form
     {
-        private int rectangleHeight;
-        private int ellipticWidth;
-        private float ratio;
+        public int rectangleHeight { get; set; }
+        public int ellipticWidth { get; set; }
+        public float ratio { get; set; }
         public mainForm()
         {
             InitializeComponent();
-
-            preferenceForm preferenceForm = new preferenceForm();
-            preferenceForm.Apply += PreferenceForm_Apply;
+            rectangleHeight = 1280;
+            ellipticWidth = 720;
+            ratio = 2;
+            preferenceForm preferenceForm = createPreferenceForm();
+            
+            this.label1.Text = "Rectangle Height: " + rectangleHeight;
+            this.label2.Text = "Elliptic Width: " + ellipticWidth;
+            this.label3.Text = "Ratio: " + ratio;
             preferenceForm.Show();
         }
 
@@ -30,5 +35,37 @@ namespace HW3_A
             ellipticWidth = preferenceForm.eWidth;
             ratio = preferenceForm.ratio;
         }
+
+        private void modallyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            preferenceForm preferenceForm = createPreferenceForm();
+            preferenceForm.hideApplyButton();
+            preferenceForm.ShowDialog();
+        }
+
+        private void modelesslyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            preferenceForm preferenceForm = createPreferenceForm();
+            preferenceForm.Show();
+        }
+
+        private preferenceForm createPreferenceForm()
+        {
+            preferenceForm preferenceForm = new preferenceForm(this);
+            preferenceForm.Apply += PreferenceForm_Apply;
+            return preferenceForm;
+        }
+
+        public void updateFormUserValues(int rHeight, int eWidth, float ratio)
+        {
+            rectangleHeight = rHeight;
+            ellipticWidth = eWidth;
+            this.ratio = ratio;
+            this.label1.Text = "Rectangle Height: " + rectangleHeight;
+            this.label2.Text = "Elliptic Width: " + ellipticWidth;
+            this.label3.Text = "Ratio: " + ratio;
+        }
+
+       
     }
 }
