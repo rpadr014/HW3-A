@@ -56,9 +56,10 @@
             this.panel1.Controls.Add(this.heightLabel);
             this.panel1.Controls.Add(this.widthLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 57);
+            this.panel1.Location = new System.Drawing.Point(0, 88);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 219);
+            this.panel1.Size = new System.Drawing.Size(1200, 336);
             this.panel1.TabIndex = 2;
             // 
             // rNum
@@ -68,23 +69,26 @@
             0,
             0,
             131072});
-            this.rNum.Location = new System.Drawing.Point(404, 139);
+            this.rNum.Location = new System.Drawing.Point(606, 214);
+            this.rNum.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rNum.Name = "rNum";
-            this.rNum.Size = new System.Drawing.Size(120, 20);
+            this.rNum.Size = new System.Drawing.Size(180, 26);
             this.rNum.TabIndex = 11;
             // 
             // hNum
             // 
-            this.hNum.Location = new System.Drawing.Point(405, 88);
+            this.hNum.Location = new System.Drawing.Point(608, 135);
+            this.hNum.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.hNum.Name = "hNum";
-            this.hNum.Size = new System.Drawing.Size(120, 20);
+            this.hNum.Size = new System.Drawing.Size(180, 26);
             this.hNum.TabIndex = 10;
             // 
             // wNum
             // 
-            this.wNum.Location = new System.Drawing.Point(405, 41);
+            this.wNum.Location = new System.Drawing.Point(608, 63);
+            this.wNum.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.wNum.Name = "wNum";
-            this.wNum.Size = new System.Drawing.Size(120, 20);
+            this.wNum.Size = new System.Drawing.Size(180, 26);
             this.wNum.TabIndex = 9;
             // 
             // cancelButton
@@ -93,9 +97,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(450, 180);
+            this.cancelButton.Location = new System.Drawing.Point(675, 277);
+            this.cancelButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.Size = new System.Drawing.Size(112, 34);
             this.cancelButton.TabIndex = 8;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
@@ -106,9 +111,10 @@
             this.applyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.applyButton.Location = new System.Drawing.Point(356, 180);
+            this.applyButton.Location = new System.Drawing.Point(534, 277);
+            this.applyButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.applyButton.Name = "applyButton";
-            this.applyButton.Size = new System.Drawing.Size(75, 23);
+            this.applyButton.Size = new System.Drawing.Size(112, 34);
             this.applyButton.TabIndex = 7;
             this.applyButton.Text = "Apply";
             this.applyButton.UseVisualStyleBackColor = true;
@@ -120,9 +126,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.okayButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okayButton.Location = new System.Drawing.Point(262, 180);
+            this.okayButton.Location = new System.Drawing.Point(393, 277);
+            this.okayButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.okayButton.Name = "okayButton";
-            this.okayButton.Size = new System.Drawing.Size(75, 23);
+            this.okayButton.Size = new System.Drawing.Size(112, 34);
             this.okayButton.TabIndex = 6;
             this.okayButton.Text = "OK";
             this.okayButton.UseVisualStyleBackColor = true;
@@ -134,9 +141,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ratioLabel.AutoSize = true;
-            this.ratioLabel.Location = new System.Drawing.Point(259, 139);
+            this.ratioLabel.Location = new System.Drawing.Point(388, 214);
+            this.ratioLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ratioLabel.Name = "ratioLabel";
-            this.ratioLabel.Size = new System.Drawing.Size(38, 13);
+            this.ratioLabel.Size = new System.Drawing.Size(55, 20);
             this.ratioLabel.TabIndex = 2;
             this.ratioLabel.Text = "Ratio: ";
             // 
@@ -146,9 +154,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.heightLabel.AutoSize = true;
-            this.heightLabel.Location = new System.Drawing.Point(259, 95);
+            this.heightLabel.Location = new System.Drawing.Point(388, 146);
+            this.heightLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.heightLabel.Name = "heightLabel";
-            this.heightLabel.Size = new System.Drawing.Size(134, 13);
+            this.heightLabel.Size = new System.Drawing.Size(198, 20);
             this.heightLabel.TabIndex = 1;
             this.heightLabel.Text = "Height of Rectangle Child: ";
             // 
@@ -158,18 +167,20 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.widthLabel.AutoSize = true;
-            this.widthLabel.Location = new System.Drawing.Point(259, 41);
+            this.widthLabel.Location = new System.Drawing.Point(388, 63);
+            this.widthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.widthLabel.Name = "widthLabel";
-            this.widthLabel.Size = new System.Drawing.Size(109, 13);
+            this.widthLabel.Size = new System.Drawing.Size(160, 20);
             this.widthLabel.TabIndex = 0;
             this.widthLabel.Text = "Width of Elliptic Child:";
             // 
             // preferenceForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.Name = "preferenceForm";
             this.Text = "Preference Dialog";
             this.Controls.SetChildIndex(this.panel1, 0);

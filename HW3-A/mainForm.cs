@@ -30,5 +30,15 @@ namespace HW3_A
             ellipticWidth = preferenceForm.eWidth;
             ratio = preferenceForm.ratio;
         }
+
+        private void mToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void preferencesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
