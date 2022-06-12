@@ -71,6 +71,9 @@ namespace HW3_A
             this.label3.Text = "Ratio: " + ratio;
         }
 
-       
+        private void preferencesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
