@@ -48,7 +48,6 @@ namespace HW3_A
             this.menuStrip1.SuspendLayout();
             this.mainMenuContextStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.openPreferencesModallyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.modallyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modelesslyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -75,11 +74,12 @@ namespace HW3_A
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openEllipticChildToolStripMenuItem,
-            this.openRectangularChildToolStripMenuItem,
-            this.closeAllRectangularChildrensToolStripMenuItem,
-            this.closeAllEllipticalChildrenToolStripMenuItem,
-            this.closeApplicationToolStripMenuItem});
+                this.openEllipticChildToolStripMenuItem,
+                this.openRectangularChildToolStripMenuItem,
+                this.closeAllRectangularChildrensToolStripMenuItem,
+                this.closeAllEllipticalChildrenToolStripMenuItem,
+                this.closeApplicationToolStripMenuItem
+            });
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 29);
             this.fileToolStripMenuItem.Text = "File";
@@ -89,8 +89,7 @@ namespace HW3_A
             this.preferencesToolStripMenuItem.Name = "preferencesToolStripMenuItem";
             this.preferencesToolStripMenuItem.Size = new System.Drawing.Size(118, 29);
             this.preferencesToolStripMenuItem.Text = "Preferences";
-            this.preferencesToolStripMenuItem.Click += new System.EventHandler(this.preferencesToolStripMenuItem_Click);
-            // 
+            this.preferencesToolStripMenuItem.DropDown = this.mainMenuContextStrip;
             // openEllipticChildToolStripMenuItem
             // 
             this.openEllipticChildToolStripMenuItem.Name = "openEllipticChildToolStripMenuItem";
@@ -139,12 +138,7 @@ namespace HW3_A
             this.openPreferencesModallyToolStripMenuItem.Name = "openPreferencesModallyToolStripMenuItem";
             this.openPreferencesModallyToolStripMenuItem.Size = new System.Drawing.Size(317, 32);
             this.openPreferencesModallyToolStripMenuItem.Text = "Open Preferences Modally";
-            // 
-            // openPreferencesToolStripMenuItem1
-            // 
-            this.openPreferencesToolStripMenuItem1.Name = "openPreferencesToolStripMenuItem1";
-            this.openPreferencesToolStripMenuItem1.Size = new System.Drawing.Size(292, 32);
-            this.openPreferencesToolStripMenuItem1.Text = "Open Preferences ";
+
             // 
             // mToolStripMenuItem
             // 
@@ -156,18 +150,16 @@ namespace HW3_A
             // mainMenuContextStrip
             // 
             this.mainMenuContextStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openPreferencesModallyToolStripMenuItem});
+            this.openPreferencesToolStripMenuItem});
             this.mainMenuContextStrip.Name = "contextMenuStrip1";
             this.mainMenuContextStrip.Size = new System.Drawing.Size(168, 26);
             // 
             // openPreferencesModallyToolStripMenuItem
             // 
-            this.openPreferencesModallyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openPreferencesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.modallyToolStripMenuItem,
             this.modelesslyToolStripMenuItem});
-            this.openPreferencesModallyToolStripMenuItem.Name = "openPreferencesModallyToolStripMenuItem";
-            this.openPreferencesModallyToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.openPreferencesModallyToolStripMenuItem.Text = "Open Preferences";
+            // 
             // 
             // modallyToolStripMenuItem
             // 

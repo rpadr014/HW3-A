@@ -41,11 +41,6 @@ namespace HW3_A
 
         }
 
-        private void preferencesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void modallyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             preferenceForm preferenceForm = createPreferenceForm();
