@@ -26,7 +26,9 @@ namespace HW3_A
         {
             eRatio = ellipseratio;
             eWidth = ellipsewidth;
+
             eHeight = (float)eWidth * eRatio;
+
             InitializeComponent();
         }
 
@@ -35,7 +37,9 @@ namespace HW3_A
             Rectangle rect = this.ClientRectangle;
             using (GraphicsPath path = new GraphicsPath())
             {
+
                 path.AddEllipse(0,0, (float)eWidth, eHeight);
+
                 this.Region = new Region(path);
             }
 
