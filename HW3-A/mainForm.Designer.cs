@@ -84,6 +84,7 @@ namespace HW3_A
             this.openEllipticChildToolStripMenuItem.Name = "openEllipticChildToolStripMenuItem";
             this.openEllipticChildToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.openEllipticChildToolStripMenuItem.Text = "Open Elliptic Child";
+            this.openEllipticChildToolStripMenuItem.Click += new System.EventHandler(this.openEllipticChildToolStripMenuItem_Click);
             // 
             // openRectangularChildToolStripMenuItem
             // 
@@ -122,8 +123,7 @@ namespace HW3_A
             this.mainMenuContextStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openPreferencesToolStripMenuItem});
             this.mainMenuContextStrip.Name = "contextMenuStrip1";
-            this.mainMenuContextStrip.OwnerItem = this.preferencesToolStripMenuItem;
-            this.mainMenuContextStrip.Size = new System.Drawing.Size(181, 48);
+            this.mainMenuContextStrip.Size = new System.Drawing.Size(171, 26);
             // 
             // openPreferencesToolStripMenuItem
             // 
@@ -131,7 +131,7 @@ namespace HW3_A
             this.modallyToolStripMenuItem,
             this.modelesslyToolStripMenuItem});
             this.openPreferencesToolStripMenuItem.Name = "openPreferencesToolStripMenuItem";
-            this.openPreferencesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openPreferencesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.openPreferencesToolStripMenuItem.Text = "Open Preferences ";
             // 
             // modallyToolStripMenuItem

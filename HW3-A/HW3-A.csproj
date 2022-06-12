@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ellipticForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ellipticForm.Designer.cs">
+      <DependentUpon>ellipticForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="preferencesDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ellipticForm.resx">
+      <DependentUpon>ellipticForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="preferencesDialog.resx">
       <DependentUpon>preferencesDialog.cs</DependentUpon>
     </EmbeddedResource>

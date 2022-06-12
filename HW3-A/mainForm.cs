@@ -22,11 +22,13 @@ namespace HW3_A
             ellipticWidth = 720;
             ratio = 2;
             preferenceForm preferenceForm = createPreferenceForm();
+           // ellipticForm ellipticForm = new ellipticForm(ratio, ellipticWidth);
             
             this.label1.Text = "Rectangle Height: " + rectangleHeight;
             this.label2.Text = "Elliptic Width: " + ellipticWidth;
             this.label3.Text = "Ratio: " + ratio;
             preferenceForm.Show();
+            //ellipticForm.Show();
         }
 
         private void PreferenceForm_Apply(object sender, EventArgs e)
@@ -74,6 +76,12 @@ namespace HW3_A
         private void preferencesToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void openEllipticChildToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ellipticForm ellipticForm = new ellipticForm(ratio, ellipticWidth);
+            ellipticForm.Show();
         }
     }
 }
