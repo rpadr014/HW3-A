@@ -12,6 +12,8 @@ namespace HW3_A
 {
     public partial class mainForm : Form
     {
+        List<ellipticForm> ellipticForms = new List<ellipticForm>();
+
         public int rectangleHeight { get; set; }
         public int ellipticWidth { get; set; }
         public float ratio { get; set; }
@@ -82,6 +84,36 @@ namespace HW3_A
         {
             ellipticForm ellipticForm = new ellipticForm(ratio, ellipticWidth);
             ellipticForm.Show();
+            ellipticForms.Add(ellipticForm);
+        }
+
+        private void CloseAllEllipticalChildrenToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            ellipticForms.ForEach(ellipticForm =>
+            {
+                ellipticForm.Close();
+            });
+            ellipticForms = new List<ellipticForm>();
+        }
+
+
+        private void CloseApplicationToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            var res = MessageBox.Show(
+                "Close the application?",
+                "Are you sure?",
+                MessageBoxButtons.YesNo);
+            this.PerformLayout();
+
+            if (res == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

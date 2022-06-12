@@ -53,6 +53,7 @@ namespace HW3_A
             this.menuStrip1.SuspendLayout();
             this.mainMenuContextStrip.SuspendLayout();
             this.SuspendLayout();
+            this.FormClosing += MainForm_FormClosing;
             // 
             // menuStrip1
             // 
@@ -103,12 +104,14 @@ namespace HW3_A
             this.closeAllEllipticalChildrenToolStripMenuItem.Name = "closeAllEllipticalChildrenToolStripMenuItem";
             this.closeAllEllipticalChildrenToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.closeAllEllipticalChildrenToolStripMenuItem.Text = "Close All Elliptical Children";
+            this.closeAllEllipticalChildrenToolStripMenuItem.Click += CloseAllEllipticalChildrenToolStripMenuItem_Click;
             // 
             // closeApplicationToolStripMenuItem
             // 
             this.closeApplicationToolStripMenuItem.Name = "closeApplicationToolStripMenuItem";
             this.closeApplicationToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.closeApplicationToolStripMenuItem.Text = "Close Application";
+            this.closeApplicationToolStripMenuItem.Click += CloseApplicationToolStripMenuItem_Click;
             // 
             // preferencesToolStripMenuItem
             // 
@@ -212,26 +215,6 @@ namespace HW3_A
             this.mainMenuContextStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
-
-        }
-
-        private void CloseApplicationToolStripMenuItem_Click(object sender, System.EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            var res = MessageBox.Show(
-                "Close the application?",
-                "Are you sure?",
-                MessageBoxButtons.YesNo);
-            this.PerformLayout();
-
-            if(res == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
         }
 
         #endregion
