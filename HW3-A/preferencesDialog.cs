@@ -83,10 +83,5 @@ namespace HW3_A
                 this.Close();
             }
         }
-
-        private void hNum_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

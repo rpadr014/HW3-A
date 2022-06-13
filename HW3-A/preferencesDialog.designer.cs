@@ -46,6 +46,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = global::HW3_A.Properties.Resources.headphones;
             this.panel1.Controls.Add(this.rNum);
             this.panel1.Controls.Add(this.hNum);
             this.panel1.Controls.Add(this.wNum);
@@ -110,7 +111,6 @@
             0,
             0,
             0});
-            this.hNum.ValueChanged += new System.EventHandler(this.hNum_ValueChanged);
             // 
             // wNum
             // 
