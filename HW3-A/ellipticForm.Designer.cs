@@ -34,10 +34,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
             this.AutoSize = true;
-
-            this.ClientSize = new System.Drawing.Size(3860, 1100);
+            this.ClientSize = new System.Drawing.Size(450, 450);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ellipticForm";
             this.Text = "ellipticForm";

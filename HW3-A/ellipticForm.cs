@@ -26,7 +26,6 @@ namespace HW3_A
         {
             eRatio = ellipseratio;
             eWidth = ellipsewidth;
-
             eHeight = (float)eWidth * eRatio;
 
             InitializeComponent();
@@ -34,17 +33,13 @@ namespace HW3_A
 
         void SetEllipseRegion()
         {
+            this.ClientSize = new System.Drawing.Size(eWidth, Convert.ToInt32(eHeight));
             Rectangle rect = this.ClientRectangle;
             using (GraphicsPath path = new GraphicsPath())
             {
-
-                path.AddEllipse(0,0, (float)eWidth, eHeight);
-
+                path.AddEllipse(rect);
                 this.Region = new Region(path);
             }
-
-            System.Diagnostics.Debug.WriteLine(this.Height);
-            System.Diagnostics.Debug.WriteLine(this.Width);
         }
 
         private void ellipticForm_Load(object sender, EventArgs e)
