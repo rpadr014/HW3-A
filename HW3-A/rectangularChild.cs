@@ -26,12 +26,13 @@ namespace HW3_A
         {
             Rectangleheight = rectHeight;
             RectangleRatio = rectRatio;
-            Rectanglewidth = Rectangleheight * RectangleRatio;
+            Rectanglewidth = (float)Rectangleheight * RectangleRatio;
             InitializeComponent();
         }
 
         public void SetRectangleRegion()
         {
+            this.ClientSize = new System.Drawing.Size(Convert.ToInt32(Rectanglewidth), Rectangleheight);
             Rectangle rect = new Rectangle(0, 0, (int)Rectanglewidth, Rectangleheight);
             using (GraphicsPath path = new GraphicsPath())
             {

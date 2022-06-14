@@ -21,18 +21,12 @@ namespace HW3_A
         public mainForm()
         {
             InitializeComponent();
-            rectangleHeight = 1280;
-            ellipticWidth = 720;
+            rectangleHeight = 250;
+            ellipticWidth = 300;
             ratio = 2;
             preferenceForm preferenceForm = createPreferenceForm();
-           // ellipticForm ellipticForm = new ellipticForm(ratio, ellipticWidth);
             
-            this.label1.Text = "Rectangle Height: " + rectangleHeight;
-            this.label2.Text = "Elliptic Width: " + ellipticWidth;
-            this.label3.Text = "Ratio: " + ratio;
-            this.FormClosing += MainForm_FormClosing;
-            preferenceForm.Show();
-            //ellipticForm.Show();
+            this.FormClosing += MainForm_FormClosing;;
         }
 
         private void PreferenceForm_Apply(object sender, EventArgs e)
@@ -72,9 +66,6 @@ namespace HW3_A
             rectangleHeight = rHeight;
             ellipticWidth = eWidth;
             this.ratio = ratio;
-            this.label1.Text = "Rectangle Height: " + rectangleHeight;
-            this.label2.Text = "Elliptic Width: " + ellipticWidth;
-            this.label3.Text = "Ratio: " + ratio;
         }
 
         private void preferencesToolStripMenuItem_Click(object sender, EventArgs e)

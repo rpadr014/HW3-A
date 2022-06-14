@@ -38,11 +38,7 @@ namespace HW3_A
 
         private void applyButton_Click(object sender, EventArgs e)
         {
-            if (Apply != null)
-            {
-                mainFormInstance.updateFormUserValues(Convert.ToInt32(Math.Round(hNum.Value, 0)), Convert.ToInt32(Math.Round(wNum.Value, 0)), (float)rNum.Value);
-                Apply(this, EventArgs.Empty);
-            }
+            mainFormInstance.updateFormUserValues(Convert.ToInt32(Math.Round(hNum.Value, 0)), Convert.ToInt32(Math.Round(wNum.Value, 0)), (float)rNum.Value);
         }
 
         private void okayButton_Click(object sender, EventArgs e)

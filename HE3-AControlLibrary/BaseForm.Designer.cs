@@ -72,7 +72,7 @@
             // colorMenuItem
             // 
             this.colorMenuItem.Name = "colorMenuItem";
-            this.colorMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.colorMenuItem.Size = new System.Drawing.Size(103, 22);
             this.colorMenuItem.Text = "Color";
             this.colorMenuItem.Click += new System.EventHandler(this.colorMenuItem_Click);
             // 
@@ -80,6 +80,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Aquamarine;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ContextMenuStrip = this.contextMenu;
             this.Name = "BaseForm";
