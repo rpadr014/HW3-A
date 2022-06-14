@@ -84,7 +84,7 @@ namespace HW3_A
             this.openEllipticChildToolStripMenuItem.Name = "openEllipticChildToolStripMenuItem";
             this.openEllipticChildToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.openEllipticChildToolStripMenuItem.Text = "Open Elliptic Child";
-            this.openEllipticChildToolStripMenuItem.Click += new System.EventHandler(this.openRectangularChildToolStripMenuItem_Click);
+            this.openEllipticChildToolStripMenuItem.Click += new System.EventHandler(this.openEllipticChildToolStripMenuItem_Click);
             // 
             // openRectangularChildToolStripMenuItem
             // 
@@ -105,12 +105,14 @@ namespace HW3_A
             this.closeAllEllipticalChildrenToolStripMenuItem.Name = "closeAllEllipticalChildrenToolStripMenuItem";
             this.closeAllEllipticalChildrenToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.closeAllEllipticalChildrenToolStripMenuItem.Text = "Close All Elliptical Children";
+            this.closeAllEllipticalChildrenToolStripMenuItem.Click += new System.EventHandler(this.CloseAllEllipticalChildrenToolStripMenuItem_Click);
             // 
             // closeApplicationToolStripMenuItem
             // 
             this.closeApplicationToolStripMenuItem.Name = "closeApplicationToolStripMenuItem";
             this.closeApplicationToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.closeApplicationToolStripMenuItem.Text = "Close Application";
+            this.closeApplicationToolStripMenuItem.Click += new System.EventHandler(this.CloseApplicationToolStripMenuItem_Click);
             // 
             // preferencesToolStripMenuItem
             // 

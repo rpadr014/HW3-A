@@ -30,6 +30,7 @@ namespace HW3_A
             this.label1.Text = "Rectangle Height: " + rectangleHeight;
             this.label2.Text = "Elliptic Width: " + ellipticWidth;
             this.label3.Text = "Ratio: " + ratio;
+            this.FormClosing += MainForm_FormClosing;
             preferenceForm.Show();
             //ellipticForm.Show();
         }
@@ -131,12 +132,6 @@ namespace HW3_A
             {
                 e.Cancel = true;
             }
-        }
-
-        private void openRectangularChildToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            rectangularChild rectChild = new rectangularChild(rectangleHeight, ratio);
-            rectChild.Show();
         }
     }
 }
