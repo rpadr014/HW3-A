@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.centerPanel = new System.Windows.Forms.Panel();
             this.rNum = new System.Windows.Forms.NumericUpDown();
             this.hNum = new System.Windows.Forms.NumericUpDown();
             this.wNum = new System.Windows.Forms.NumericUpDown();
@@ -38,29 +38,29 @@
             this.ratioLabel = new System.Windows.Forms.Label();
             this.heightLabel = new System.Windows.Forms.Label();
             this.widthLabel = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.centerPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wNum)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // centerPanel
             // 
-            this.panel1.BackgroundImage = global::HW3_A.Properties.Resources.headphones;
-            this.panel1.Controls.Add(this.rNum);
-            this.panel1.Controls.Add(this.hNum);
-            this.panel1.Controls.Add(this.wNum);
-            this.panel1.Controls.Add(this.cancelButton);
-            this.panel1.Controls.Add(this.applyButton);
-            this.panel1.Controls.Add(this.okayButton);
-            this.panel1.Controls.Add(this.ratioLabel);
-            this.panel1.Controls.Add(this.heightLabel);
-            this.panel1.Controls.Add(this.widthLabel);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 57);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 219);
-            this.panel1.TabIndex = 2;
+            this.centerPanel.BackgroundImage = global::HW3_A.Properties.Resources.headphones;
+            this.centerPanel.Controls.Add(this.rNum);
+            this.centerPanel.Controls.Add(this.hNum);
+            this.centerPanel.Controls.Add(this.wNum);
+            this.centerPanel.Controls.Add(this.cancelButton);
+            this.centerPanel.Controls.Add(this.applyButton);
+            this.centerPanel.Controls.Add(this.okayButton);
+            this.centerPanel.Controls.Add(this.ratioLabel);
+            this.centerPanel.Controls.Add(this.heightLabel);
+            this.centerPanel.Controls.Add(this.widthLabel);
+            this.centerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.centerPanel.Location = new System.Drawing.Point(0, 57);
+            this.centerPanel.Name = "centerPanel";
+            this.centerPanel.Size = new System.Drawing.Size(800, 219);
+            this.centerPanel.TabIndex = 2;
             // 
             // rNum
             // 
@@ -217,16 +217,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.centerPanel);
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "preferenceForm";
             this.Text = "Preference Dialog";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.preferenceForm_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyPressEvent);
-            this.Controls.SetChildIndex(this.panel1, 0);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Controls.SetChildIndex(this.centerPanel, 0);
+            this.centerPanel.ResumeLayout(false);
+            this.centerPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rNum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hNum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wNum)).EndInit();
@@ -235,7 +235,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel centerPanel;
         private System.Windows.Forms.Label ratioLabel;
         private System.Windows.Forms.Label heightLabel;
         private System.Windows.Forms.Label widthLabel;

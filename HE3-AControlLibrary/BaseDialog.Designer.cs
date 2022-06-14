@@ -28,47 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.nameControl1 = new HE3_AControlLibrary.NameControl();
-            this.courseControl1 = new HE3_AControlLibrary.CourseControl();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.nameControl = new HE3_AControlLibrary.NameControl();
+            this.courseControl = new HE3_AControlLibrary.CourseControl();
+            this.midPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // nameControl1
+            // nameControl
             // 
-            this.nameControl1.BackColor = System.Drawing.Color.Azure;
-            this.nameControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.nameControl1.ForeColor = System.Drawing.Color.Black;
-            this.nameControl1.Location = new System.Drawing.Point(0, 276);
-            this.nameControl1.Name = "nameControl1";
-            this.nameControl1.Size = new System.Drawing.Size(800, 174);
-            this.nameControl1.TabIndex = 0;
+            this.nameControl.BackColor = System.Drawing.Color.Azure;
+            this.nameControl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.nameControl.ForeColor = System.Drawing.Color.Black;
+            this.nameControl.Location = new System.Drawing.Point(0, 276);
+            this.nameControl.Name = "nameControl";
+            this.nameControl.Size = new System.Drawing.Size(800, 174);
+            this.nameControl.TabIndex = 0;
             // 
-            // courseControl1
+            // courseControl
             // 
-            this.courseControl1.BackColor = System.Drawing.Color.Transparent;
-            this.courseControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.courseControl1.Location = new System.Drawing.Point(0, 0);
-            this.courseControl1.Name = "courseControl1";
-            this.courseControl1.Size = new System.Drawing.Size(800, 57);
-            this.courseControl1.TabIndex = 1;
+            this.courseControl.BackColor = System.Drawing.Color.Transparent;
+            this.courseControl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.courseControl.Location = new System.Drawing.Point(0, 0);
+            this.courseControl.Name = "courseControl";
+            this.courseControl.Size = new System.Drawing.Size(800, 57);
+            this.courseControl.TabIndex = 1;
             // 
-            // panel1
+            // midPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 57);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 219);
-            this.panel1.TabIndex = 2;
+            this.midPanel.BackColor = System.Drawing.Color.Transparent;
+            this.midPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.midPanel.Location = new System.Drawing.Point(0, 57);
+            this.midPanel.Name = "midPanel";
+            this.midPanel.Size = new System.Drawing.Size(800, 219);
+            this.midPanel.TabIndex = 2;
             // 
             // BaseDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.courseControl1);
-            this.Controls.Add(this.nameControl1);
+            this.Controls.Add(this.midPanel);
+            this.Controls.Add(this.courseControl);
+            this.Controls.Add(this.nameControl);
             this.Name = "BaseDialog";
             this.Text = "Base Dialog";
             this.ResumeLayout(false);
@@ -77,8 +77,8 @@
 
         #endregion
 
-        private NameControl nameControl1;
-        private CourseControl courseControl1;
-        private System.Windows.Forms.Panel panel1;
+        private NameControl nameControl;
+        private CourseControl courseControl;
+        private System.Windows.Forms.Panel midPanel;
     }
 }
