@@ -13,6 +13,7 @@ namespace HW3_A
     public partial class mainForm : Form
     {
         List<ellipticForm> ellipticForms = new List<ellipticForm>();
+        List<rectangularChild> rectangularForms = new List<rectangularChild>();
 
         public int rectangleHeight { get; set; }
         public int ellipticWidth { get; set; }
@@ -87,6 +88,13 @@ namespace HW3_A
             ellipticForms.Add(ellipticForm);
         }
 
+        private void openRectangularChildToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rectangularChild rectangularForm = new rectangularChild(rectangleHeight, ratio);
+            rectangularForm.Show();
+            rectangularForms.Add(rectangularForm);
+        }
+
         private void CloseAllEllipticalChildrenToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
             ellipticForms.ForEach(ellipticForm =>
@@ -94,6 +102,15 @@ namespace HW3_A
                 ellipticForm.Close();
             });
             ellipticForms = new List<ellipticForm>();
+        }
+
+        private void CloseAllRectangularChildrenToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            rectangularForms.ForEach(rectangularForm =>
+            {
+                rectangularForm.Close();
+            });
+            rectangularForms = new List<rectangularChild>();
         }
 
 
