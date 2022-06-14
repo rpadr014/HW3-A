@@ -53,7 +53,6 @@ namespace HW3_A
             this.menuStrip1.SuspendLayout();
             this.mainMenuContextStrip.SuspendLayout();
             this.SuspendLayout();
-            this.FormClosing += MainForm_FormClosing;
             // 
             // menuStrip1
             // 
@@ -92,6 +91,7 @@ namespace HW3_A
             this.openRectangularChildToolStripMenuItem.Name = "openRectangularChildToolStripMenuItem";
             this.openRectangularChildToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.openRectangularChildToolStripMenuItem.Text = "Open Rectangular Child";
+            this.openRectangularChildToolStripMenuItem.Click += new System.EventHandler(this.openRectangularChildToolStripMenuItem_Click);
             // 
             // closeAllRectangularChildrensToolStripMenuItem
             // 
@@ -104,14 +104,12 @@ namespace HW3_A
             this.closeAllEllipticalChildrenToolStripMenuItem.Name = "closeAllEllipticalChildrenToolStripMenuItem";
             this.closeAllEllipticalChildrenToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.closeAllEllipticalChildrenToolStripMenuItem.Text = "Close All Elliptical Children";
-            this.closeAllEllipticalChildrenToolStripMenuItem.Click += CloseAllEllipticalChildrenToolStripMenuItem_Click;
             // 
             // closeApplicationToolStripMenuItem
             // 
             this.closeApplicationToolStripMenuItem.Name = "closeApplicationToolStripMenuItem";
             this.closeApplicationToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.closeApplicationToolStripMenuItem.Text = "Close Application";
-            this.closeApplicationToolStripMenuItem.Click += CloseApplicationToolStripMenuItem_Click;
             // 
             // preferencesToolStripMenuItem
             // 
@@ -126,6 +124,7 @@ namespace HW3_A
             this.mainMenuContextStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openPreferencesToolStripMenuItem});
             this.mainMenuContextStrip.Name = "contextMenuStrip1";
+            this.mainMenuContextStrip.OwnerItem = this.preferencesToolStripMenuItem;
             this.mainMenuContextStrip.Size = new System.Drawing.Size(171, 26);
             // 
             // openPreferencesToolStripMenuItem
@@ -140,14 +139,14 @@ namespace HW3_A
             // modallyToolStripMenuItem
             // 
             this.modallyToolStripMenuItem.Name = "modallyToolStripMenuItem";
-            this.modallyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modallyToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.modallyToolStripMenuItem.Text = "Modally";
             this.modallyToolStripMenuItem.Click += new System.EventHandler(this.modallyToolStripMenuItem_Click);
             // 
             // modelesslyToolStripMenuItem
             // 
             this.modelesslyToolStripMenuItem.Name = "modelesslyToolStripMenuItem";
-            this.modelesslyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modelesslyToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.modelesslyToolStripMenuItem.Text = "Modelessly";
             this.modelesslyToolStripMenuItem.Click += new System.EventHandler(this.modelesslyToolStripMenuItem_Click);
             // 
@@ -215,6 +214,7 @@ namespace HW3_A
             this.mainMenuContextStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

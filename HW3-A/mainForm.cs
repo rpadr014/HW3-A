@@ -115,5 +115,11 @@ namespace HW3_A
                 e.Cancel = true;
             }
         }
+
+        private void openRectangularChildToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rectangularChild rectChild = new rectangularChild(rectangleHeight, ratio);
+            rectChild.Show();
+        }
     }
 }
