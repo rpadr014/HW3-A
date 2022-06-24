@@ -31,21 +31,21 @@ namespace HW3_A
             eWidth = mainFormInstance.ellipticWidth;
             ratio = mainFormInstance.ratio;
             InitializeComponent();
-            hNum.Value = rHeight;
-            wNum.Value = eWidth;
-            rNum.Value = (decimal)ratio;
+            rHeight = 100;
+            eWidth = 100;
+            ratio = 1;
+            rText.Text = "1";
+            wText.Text = "250";
+            hText.Text = "250";
         }
 
         private void applyButton_Click(object sender, EventArgs e)
         {
-            mainFormInstance.updateFormUserValues(Convert.ToInt32(Math.Round(hNum.Value, 0)), Convert.ToInt32(Math.Round(wNum.Value, 0)), (float)rNum.Value);
+            mainFormInstance.updateFormUserValues(rHeight, eWidth, ratio);
         }
 
         private void okayButton_Click(object sender, EventArgs e)
         {
-            rHeight = Convert.ToInt32(Math.Round(hNum.Value, 0));
-            eWidth = Convert.ToInt32(Math.Round(wNum.Value, 0));
-            ratio = (float)rNum.Value;
             mainFormInstance.updateFormUserValues(rHeight, eWidth, ratio);
             this.Close();
         }
@@ -58,7 +58,7 @@ namespace HW3_A
 
         public void hideApplyButton()
         {
-            this.applyButton.Visible = false;
+            this.applyButton.Visible = true;
         }
 
         private void preferenceForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -78,6 +78,95 @@ namespace HW3_A
                 mainFormInstance.updateFormUserValues(rHeight, eWidth, ratio);
                 this.Close();
             }
+       }
+
+        private void wText_Validating(object sender, CancelEventArgs e)
+        {
+            eWidth = (wText.Text.Length == 0) ? 0 : int.Parse(wText.Text);
+
+            if (eWidth > 500 || eWidth < 1)
+            {
+                //MessageBox.Show("Not in range.");
+                e.Cancel = true;
+                wError.SetError(wText,"Not in range");
+            } else
+            {
+                wError.Clear();
+            }
+        }
+
+        private void hText_Validating(object sender, CancelEventArgs e)
+        {
+            rHeight = (hText.Text.Length == 0) ? 0 : int.Parse(hText.Text);
+
+            if (rHeight > 500 || rHeight < 1)
+            {
+                //MessageBox.Show("Not in range.");
+                e.Cancel = true;
+                hError.SetError(hText,"Not in range");
+            } else
+            {
+                hError.Clear();
+            }
+        }
+
+        private void rText_Validating(object sender, CancelEventArgs e)
+        {
+            ratio = (rText.Text.Length == 0) ? 0 : float.Parse(rText.Text);
+
+            if (ratio > 5 || ratio < 1)
+            {
+                //MessageBox.Show("Not in range.");
+                e.Cancel = true;
+                rError.SetError(rText, "Not in range");
+            } else
+            {
+                rError.Clear();
+            }
+        }
+
+        private void wText_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            MessageBox.Show("Range is from 1 to 500");
+        }
+
+        private void hText_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            MessageBox.Show("Range is from 1 to 500");
+        }
+
+        private void rText_HelpRequested(object sender, HelpEventArgs hlpevent)
+        {
+            MessageBox.Show("Range is from 1 to 5");
+        }
+
+        private void preferenceForm_Deactivate(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Opacity = (double)0.50;
+            }
+            catch (Exception err)
+            {
+                //MessageBox.Show(this,err.ToString());
+            }
+        }
+
+        private void preferenceForm_Activated(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Opacity = (double)1.0;
+            }
+            catch (Exception err)
+            {
+                //MessageBox.Show(this, err.ToString());
+            }
+        }
+
+        private void preferenceForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //MessageBox.Show("Close using Okay/Cancel");
         }
     }
 }
