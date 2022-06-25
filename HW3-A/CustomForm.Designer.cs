@@ -1,6 +1,6 @@
 ﻿namespace HW3_A
 {
-    partial class ellipticForm
+    partial class CustomForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,20 +30,19 @@
         {
             this.SuspendLayout();
             // 
-            // ellipticForm
+            // CustomForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(450, 450);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ellipticForm";
-            this.Text = "ellipticForm";
-            this.Activated += new System.EventHandler(this.ellipticForm_Activated);
-            this.Deactivate += new System.EventHandler(this.ellipticForm_Deactivate);
-            this.Load += new System.EventHandler(this.ellipticForm_Load);
-            this.BackColorChanged += new System.EventHandler(this.ellipticForm_BackColorChanged);
-            this.SizeChanged += new System.EventHandler(this.ellipticForm_SizeChanged);
+            this.Name = "CustomForm";
+            this.Text = "Form1";
+            this.Activated += new System.EventHandler(this.CustomForm_Activated);
+            this.Deactivate += new System.EventHandler(this.CustomForm_Deactivate);
+            this.Load += new System.EventHandler(this.CustomForm_Load);
+            this.BackColorChanged += new System.EventHandler(this.CustomForm_BackColorChanged);
+            this.SizeChanged += new System.EventHandler(this.CustomForm_SizeChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 

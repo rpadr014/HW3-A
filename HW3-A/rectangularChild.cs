@@ -50,5 +50,25 @@ namespace HW3_A
         {
             SetRectangleRegion();
         }
+
+        private void rectangularChild_Activated(object sender, EventArgs e)
+        {
+            mainForm owner = (mainForm)this.Owner;
+            owner.changeStatusBackgroundColor(this.BackColor);
+            owner.focusOnRectangular(true);
+        }
+
+        private void rectangularChild_Deactivate(object sender, EventArgs e)
+        {
+            mainForm owner = (mainForm)this.Owner;
+            owner.changeStatusBackgroundColor(Color.White);
+            owner.focusOnRectangular(false);
+        }
+
+        private void rectangularChild_BackColorChanged(object sender, EventArgs e)
+        {
+            mainForm owner = (mainForm)this.Owner;
+            owner.changeStatusBackgroundColor(this.BackColor);
+        }
     }
 }
