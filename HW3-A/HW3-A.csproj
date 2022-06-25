@@ -147,5 +147,8 @@
   <ItemGroup>
     <None Include="Resources\headphones.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Initials_Icon.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,7 +29,8 @@ namespace HW3_A
             
             preferenceForm preferenceForm = createPreferenceForm();
 
-            this.FormClosing += MainForm_FormClosing;;
+            this.FormClosing += MainForm_FormClosing;
+            this.Icon = Properties.Resources.Initials_Icon;
         }
         private void mainForm_Load(object sender, EventArgs e)
         {
