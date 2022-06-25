@@ -47,8 +47,16 @@ namespace HW3_A
             this.modelesslyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openPreferencesModallyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mainMenuStatusStrip = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.openCustomChildToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.closeAllCustomChildrenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.mainMenuContextStrip.SuspendLayout();
+            this.mainMenuStatusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip
@@ -56,7 +64,8 @@ namespace HW3_A
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.preferencesToolStripMenuItem});
+            this.preferencesToolStripMenuItem,
+            this.helpToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
@@ -69,8 +78,10 @@ namespace HW3_A
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openEllipticChildToolStripMenuItem,
             this.openRectangularChildToolStripMenuItem,
+            this.openCustomChildToolStripMenuItem,
             this.closeAllRectangularChildrensToolStripMenuItem,
             this.closeAllEllipticalChildrenToolStripMenuItem,
+            this.closeAllCustomChildrenToolStripMenuItem,
             this.closeApplicationToolStripMenuItem,
             this.enableLogInToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -132,6 +143,7 @@ namespace HW3_A
             this.mainMenuContextStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openPreferencesToolStripMenuItem});
             this.mainMenuContextStrip.Name = "contextMenuStrip1";
+            this.mainMenuContextStrip.OwnerItem = this.preferencesToolStripMenuItem;
             this.mainMenuContextStrip.Size = new System.Drawing.Size(171, 26);
             // 
             // openPreferencesToolStripMenuItem
@@ -170,12 +182,64 @@ namespace HW3_A
             this.mToolStripMenuItem.Text = "M";
             this.mToolStripMenuItem.Click += new System.EventHandler(this.mToolStripMenuItem_Click);
             // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.oathToolStripMenuItem,
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // oathToolStripMenuItem
+            // 
+            this.oathToolStripMenuItem.Name = "oathToolStripMenuItem";
+            this.oathToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.oathToolStripMenuItem.Text = "Oath";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            // 
+            // mainMenuStatusStrip
+            // 
+            this.mainMenuStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel});
+            this.mainMenuStatusStrip.Location = new System.Drawing.Point(0, 386);
+            this.mainMenuStatusStrip.Name = "mainMenuStatusStrip";
+            this.mainMenuStatusStrip.Size = new System.Drawing.Size(707, 22);
+            this.mainMenuStatusStrip.TabIndex = 1;
+            this.mainMenuStatusStrip.Text = "Status";
+            // 
+            // toolStripStatusLabel
+            // 
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
+            this.toolStripStatusLabel.Text = "Status";
+            // 
+            // openCustomChildToolStripMenuItem
+            // 
+            this.openCustomChildToolStripMenuItem.Name = "openCustomChildToolStripMenuItem";
+            this.openCustomChildToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.openCustomChildToolStripMenuItem.Text = "Open Custom Child";
+            this.openCustomChildToolStripMenuItem.Click += new System.EventHandler(this.openCustomChildToolStripMenuItem_Click);
+            // 
+            // closeAllCustomChildrenToolStripMenuItem
+            // 
+            this.closeAllCustomChildrenToolStripMenuItem.Name = "closeAllCustomChildrenToolStripMenuItem";
+            this.closeAllCustomChildrenToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.closeAllCustomChildrenToolStripMenuItem.Text = "Close All Custom Children";
+            this.closeAllCustomChildrenToolStripMenuItem.Click += new System.EventHandler(this.closeAllCustomChildrenToolStripMenuItem_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(707, 408);
             this.ContextMenuStrip = this.mainMenuContextStrip;
+            this.Controls.Add(this.mainMenuStatusStrip);
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
             this.Name = "mainForm";
@@ -184,6 +248,8 @@ namespace HW3_A
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.mainMenuContextStrip.ResumeLayout(false);
+            this.mainMenuStatusStrip.ResumeLayout(false);
+            this.mainMenuStatusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,6 +274,13 @@ namespace HW3_A
         private System.Windows.Forms.ContextMenuStrip mainMenuContextStrip;
         private System.Windows.Forms.ToolStripMenuItem modelesslyToolStripMenuItem;
         private ToolStripMenuItem enableLogInToolStripMenuItem;
+        private ToolStripMenuItem helpToolStripMenuItem;
+        private ToolStripMenuItem oathToolStripMenuItem;
+        private ToolStripMenuItem aboutToolStripMenuItem;
+        private StatusStrip mainMenuStatusStrip;
+        private ToolStripStatusLabel toolStripStatusLabel;
+        private ToolStripMenuItem openCustomChildToolStripMenuItem;
+        private ToolStripMenuItem closeAllCustomChildrenToolStripMenuItem;
         //private System.Windows.Forms.Label label1;
         //private System.Windows.Forms.Label label2;
     }
