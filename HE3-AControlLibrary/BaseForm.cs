@@ -44,6 +44,7 @@ namespace HE3_AControlLibrary
 
         private void closeMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             this.Close();
         }
 

@@ -34,6 +34,7 @@ namespace HW3_A
         private void mainForm_Load(object sender, EventArgs e)
         {
             //ToolStripManager.Merge(BaseForm.menuStripBase, this.menuStrip);
+            this.closeAllOpenChildrenToolStripMenuItem.Visible = false;
             this.closeAllRectangularChildrensToolStripMenuItem.Enabled = false;
             this.closeAllCustomChildrenToolStripMenuItem.Enabled = false;
             this.closeAllEllipticalChildrenToolStripMenuItem.Enabled = false;
@@ -91,6 +92,7 @@ namespace HW3_A
             ellipticForm.Show();
             ellipticForms.Add(ellipticForm);
             this.closeAllEllipticalChildrenToolStripMenuItem.Enabled = true;
+            this.closeAllOpenChildrenToolStripMenuItem.Visible = true;
         }
 
         private void openRectangularChildToolStripMenuItem_Click(object sender, EventArgs e)
@@ -101,6 +103,7 @@ namespace HW3_A
             rectangularForm.Show();
             rectangularForms.Add(rectangularForm);
             this.closeAllRectangularChildrensToolStripMenuItem.Enabled = true;
+            this.closeAllOpenChildrenToolStripMenuItem.Visible = true;
         }
 
         private void openCustomChildToolStripMenuItem_Click(object sender, EventArgs e)
@@ -111,7 +114,8 @@ namespace HW3_A
             customForm.Show();
             customForms.Add(customForm);
             this.closeAllCustomChildrenToolStripMenuItem.Enabled = true;
-            
+            this.closeAllOpenChildrenToolStripMenuItem.Visible = true;
+
         }
 
         private void CloseAllEllipticalChildrenToolStripMenuItem_Click(object sender, System.EventArgs e)
@@ -145,6 +149,14 @@ namespace HW3_A
             customForms = new List<CustomForm>();
             ToolStripManager.RevertMerge(this.menuStrip);
             this.closeAllCustomChildrenToolStripMenuItem.Enabled = false;
+        }
+
+        private void closeAllOpenChildrenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.closeAllOpenChildrenToolStripMenuItem.Visible = false;
+            this.closeAllCustomChildrenToolStripMenuItem_Click(sender, e);
+            this.CloseAllRectangularChildrenToolStripMenuItem_Click(sender, e);
+            this.CloseAllEllipticalChildrenToolStripMenuItem_Click(sender, e);
         }
 
 

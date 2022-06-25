@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace HW3_A
 {
@@ -54,6 +55,7 @@ namespace HW3_A
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.openCustomChildToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeAllCustomChildrenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.closeAllOpenChildrenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.mainMenuContextStrip.SuspendLayout();
             this.mainMenuStatusStrip.SuspendLayout();
@@ -83,7 +85,8 @@ namespace HW3_A
             this.closeAllEllipticalChildrenToolStripMenuItem,
             this.closeAllCustomChildrenToolStripMenuItem,
             this.closeApplicationToolStripMenuItem,
-            this.enableLogInToolStripMenuItem});
+            this.enableLogInToolStripMenuItem,
+            this.closeAllOpenChildrenToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
             this.fileToolStripMenuItem.Text = "File";
@@ -259,6 +262,16 @@ namespace HW3_A
             this.closeAllCustomChildrenToolStripMenuItem.ShowShortcutKeys = true;
             this.closeAllCustomChildrenToolStripMenuItem.Click += new System.EventHandler(this.closeAllCustomChildrenToolStripMenuItem_Click);
             // 
+            // closeAllCustomChildrenToolStripMenuItem
+            // 
+            this.closeAllOpenChildrenToolStripMenuItem.Name = "closeAllCustomChildrenToolStripMenuItem";
+            this.closeAllOpenChildrenToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.closeAllOpenChildrenToolStripMenuItem.Text = "Close All Open Children";
+            this.closeAllOpenChildrenToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Shift | Keys.C;
+            this.closeAllOpenChildrenToolStripMenuItem.ShowShortcutKeys = true;
+
+            this.closeAllOpenChildrenToolStripMenuItem.Click += new System.EventHandler(this.closeAllOpenChildrenToolStripMenuItem_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -312,6 +325,7 @@ namespace HW3_A
         private ToolStripStatusLabel toolStripStatusLabel;
         private ToolStripMenuItem openCustomChildToolStripMenuItem;
         private ToolStripMenuItem closeAllCustomChildrenToolStripMenuItem;
+        private ToolStripMenuItem closeAllOpenChildrenToolStripMenuItem;
         //private System.Windows.Forms.Label label1;
         //private System.Windows.Forms.Label label2;
     }
