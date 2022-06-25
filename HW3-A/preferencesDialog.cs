@@ -168,5 +168,10 @@ namespace HW3_A
         {
             //MessageBox.Show("Close using Okay/Cancel");
         }
+
+        private void preferenceForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
