@@ -124,5 +124,11 @@ namespace HW3_A
                 e.Cancel = true;
             }
         }
+
+        private void enableLogInToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.logInSkip = false;
+            Properties.Settings.Default.Save();
+        }
     }
 }

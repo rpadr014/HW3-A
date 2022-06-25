@@ -45,10 +45,8 @@ namespace HW3_A
             this.modallyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modelesslyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openPreferencesModallyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            //this.openPreferencesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            //this.label1 = new System.Windows.Forms.Label();
-            //this.label2 = new System.Windows.Forms.Label();
+            this.enableLogInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.mainMenuContextStrip.SuspendLayout();
             this.SuspendLayout();
@@ -73,7 +71,8 @@ namespace HW3_A
             this.openRectangularChildToolStripMenuItem,
             this.closeAllRectangularChildrensToolStripMenuItem,
             this.closeAllEllipticalChildrenToolStripMenuItem,
-            this.closeApplicationToolStripMenuItem});
+            this.closeApplicationToolStripMenuItem,
+            this.enableLogInToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
             this.fileToolStripMenuItem.Text = "File";
@@ -140,14 +139,14 @@ namespace HW3_A
             // modallyToolStripMenuItem
             // 
             this.modallyToolStripMenuItem.Name = "modallyToolStripMenuItem";
-            this.modallyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modallyToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.modallyToolStripMenuItem.Text = "Modally";
             this.modallyToolStripMenuItem.Click += new System.EventHandler(this.modallyToolStripMenuItem_Click);
             // 
             // modelesslyToolStripMenuItem
             // 
             this.modelesslyToolStripMenuItem.Name = "modelesslyToolStripMenuItem";
-            this.modelesslyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modelesslyToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.modelesslyToolStripMenuItem.Text = "Modelessly";
             this.modelesslyToolStripMenuItem.Click += new System.EventHandler(this.modelesslyToolStripMenuItem_Click);
             // 
@@ -157,11 +156,6 @@ namespace HW3_A
             this.openPreferencesModallyToolStripMenuItem.Size = new System.Drawing.Size(317, 32);
             this.openPreferencesModallyToolStripMenuItem.Text = "Open Preferences Modally";
             // 
-            // openPreferencesToolStripMenuItem1
-            // 
-            //this.openPreferencesToolStripMenuItem1.Name = "openPreferencesToolStripMenuItem1";
-            //this.openPreferencesToolStripMenuItem1.Size = new System.Drawing.Size(32, 19);
-            // 
             // mToolStripMenuItem
             // 
             this.mToolStripMenuItem.Name = "mToolStripMenuItem";
@@ -169,23 +163,12 @@ namespace HW3_A
             this.mToolStripMenuItem.Text = "M";
             this.mToolStripMenuItem.Click += new System.EventHandler(this.mToolStripMenuItem_Click);
             // 
-            // label1
+            // enableLogInToolStripMenuItem
             // 
-            //this.label1.AutoSize = true;
-            //this.label1.Location = new System.Drawing.Point(96, 56);
-            //this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            //this.label1.Name = "label1";
-            ///this.label1.Size = new System.Drawing.Size(0, 13);
-            //.label1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            //this.label2.AutoSize = true;
-            //this.label2.Location = new System.Drawing.Point(353, 200);
-            //this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            //this.label2.Name = "label2";
-            //this.label2.Size = new System.Drawing.Size(0, 13);
-            //this.label2.TabIndex = 2;
+            this.enableLogInToolStripMenuItem.Name = "enableLogInToolStripMenuItem";
+            this.enableLogInToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.enableLogInToolStripMenuItem.Text = "Enable Log In";
+            this.enableLogInToolStripMenuItem.Click += new System.EventHandler(this.enableLogInToolStripMenuItem_Click);
             // 
             // mainForm
             // 
@@ -194,8 +177,6 @@ namespace HW3_A
             this.ClientSize = new System.Drawing.Size(707, 408);
             this.ContextMenuStrip = this.mainMenuContextStrip;
             this.Controls.Add(this.menuStrip);
-            //this.Controls.Add(this.label2);
-            //this.Controls.Add(this.label1);
             this.MainMenuStrip = this.menuStrip;
             this.Name = "mainForm";
             this.Text = "HW3-A";
@@ -225,6 +206,7 @@ namespace HW3_A
         private System.Windows.Forms.ToolStripMenuItem mToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip mainMenuContextStrip;
         private System.Windows.Forms.ToolStripMenuItem modelesslyToolStripMenuItem;
+        private ToolStripMenuItem enableLogInToolStripMenuItem;
         //private System.Windows.Forms.Label label1;
         //private System.Windows.Forms.Label label2;
     }

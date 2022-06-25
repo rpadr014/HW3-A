@@ -16,6 +16,19 @@ namespace HW3_A
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            if (Properties.Settings.Default.logInSkip == false)
+            {
+                DialogResult result;
+                using (var loginDlg = new loginDialog())
+                {
+                    result = loginDlg.ShowDialog();
+                }
+                if (result == DialogResult.OK)
+                {
+                    Application.Run(new mainForm());
+                }
+            }
+            else
             Application.Run(new mainForm());
         }
     }
