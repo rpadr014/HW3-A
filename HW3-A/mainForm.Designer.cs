@@ -196,6 +196,7 @@ namespace HW3_A
             this.oathToolStripMenuItem.Name = "oathToolStripMenuItem";
             this.oathToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.oathToolStripMenuItem.Text = "Oath";
+            this.oathToolStripMenuItem.Click += OathToolStripMenuItem_Click;
             // 
             // aboutToolStripMenuItem
             // 
@@ -253,6 +254,11 @@ namespace HW3_A
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void OathToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            new oathDialog().ShowDialog();
         }
 
         #endregion
