@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HE3_AControlLibrary;
 
 namespace HW3_A
 {
@@ -25,8 +26,12 @@ namespace HW3_A
             ellipticWidth = 300;
             ratio = 2;
             preferenceForm preferenceForm = createPreferenceForm();
-            
+
             this.FormClosing += MainForm_FormClosing;;
+        }
+        private void mainForm_Load(object sender, EventArgs e)
+        {
+            //ToolStripManager.Merge(BaseForm.menuStripBase, this.menuStrip);
         }
 
         private void PreferenceForm_Apply(object sender, EventArgs e)
@@ -76,6 +81,7 @@ namespace HW3_A
         private void openEllipticChildToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ellipticForm ellipticForm = new ellipticForm(ratio, ellipticWidth);
+            ToolStripManager.Merge(ellipticForm.menuStripBase, this.menuStrip);
             ellipticForm.Show();
             ellipticForms.Add(ellipticForm);
         }
@@ -83,6 +89,7 @@ namespace HW3_A
         private void openRectangularChildToolStripMenuItem_Click(object sender, EventArgs e)
         {
             rectangularChild rectangularForm = new rectangularChild(rectangleHeight, ratio);
+            ToolStripManager.Merge(rectangularForm.menuStripBase, this.menuStrip);
             rectangularForm.Show();
             rectangularForms.Add(rectangularForm);
         }
@@ -94,6 +101,7 @@ namespace HW3_A
                 ellipticForm.Close();
             });
             ellipticForms = new List<ellipticForm>();
+            ToolStripManager.RevertMerge(this.menuStrip);
         }
 
         private void CloseAllRectangularChildrenToolStripMenuItem_Click(object sender, System.EventArgs e)
@@ -103,6 +111,7 @@ namespace HW3_A
                 rectangularForm.Close();
             });
             rectangularForms = new List<rectangularChild>();
+            ToolStripManager.RevertMerge(this.menuStrip);
         }
 
 

@@ -39,6 +39,7 @@ namespace HW3_A
             this.closeAllRectangularChildrensToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeAllEllipticalChildrenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeApplicationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.enableLogInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.preferencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenuContextStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.openPreferencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,7 +47,6 @@ namespace HW3_A
             this.modelesslyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openPreferencesModallyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.enableLogInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.mainMenuContextStrip.SuspendLayout();
             this.SuspendLayout();
@@ -112,6 +112,13 @@ namespace HW3_A
             this.closeApplicationToolStripMenuItem.Text = "Close Application";
             this.closeApplicationToolStripMenuItem.Click += new System.EventHandler(this.CloseApplicationToolStripMenuItem_Click);
             // 
+            // enableLogInToolStripMenuItem
+            // 
+            this.enableLogInToolStripMenuItem.Name = "enableLogInToolStripMenuItem";
+            this.enableLogInToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.enableLogInToolStripMenuItem.Text = "Enable Log In";
+            this.enableLogInToolStripMenuItem.Click += new System.EventHandler(this.enableLogInToolStripMenuItem_Click);
+            // 
             // preferencesToolStripMenuItem
             // 
             this.preferencesToolStripMenuItem.DropDown = this.mainMenuContextStrip;
@@ -163,13 +170,6 @@ namespace HW3_A
             this.mToolStripMenuItem.Text = "M";
             this.mToolStripMenuItem.Click += new System.EventHandler(this.mToolStripMenuItem_Click);
             // 
-            // enableLogInToolStripMenuItem
-            // 
-            this.enableLogInToolStripMenuItem.Name = "enableLogInToolStripMenuItem";
-            this.enableLogInToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
-            this.enableLogInToolStripMenuItem.Text = "Enable Log In";
-            this.enableLogInToolStripMenuItem.Click += new System.EventHandler(this.enableLogInToolStripMenuItem_Click);
-            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -180,6 +180,7 @@ namespace HW3_A
             this.MainMenuStrip = this.menuStrip;
             this.Name = "mainForm";
             this.Text = "HW3-A";
+            this.Load += new System.EventHandler(this.mainForm_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.mainMenuContextStrip.ResumeLayout(false);

@@ -52,5 +52,21 @@ namespace HE3_AControlLibrary
             if (colorDialog.ShowDialog() == DialogResult.OK)
                 this.BackColor = colorDialog.Color;
         }
+
+        private void colorsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (colorDialog.ShowDialog() == DialogResult.OK)
+                this.BackColor = colorDialog.Color;
+        }
+
+        private void closeChildToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void preferencesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

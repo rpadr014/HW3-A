@@ -72,6 +72,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="OathControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OathControl.Designer.cs">
+      <DependentUpon>OathControl.cs</DependentUpon>
+    </Compile>
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NameControl.resx">
       <DependentUpon>NameControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OathControl.resx">
+      <DependentUpon>OathControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
