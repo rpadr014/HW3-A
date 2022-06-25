@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HE3_AControlLibrary
+namespace HW3_A
 {
-    public partial class BaseDialog : Form
+    public partial class oathDialog : HE3_AControlLibrary.BaseDialog
     {
-        public BaseDialog()
+        public oathDialog()
         {
             InitializeComponent();
         }
 
-        private void BaseDialog_Load(object sender, EventArgs e)
+        private void oathDialog_Load(object sender, EventArgs e)
         {
 
         }

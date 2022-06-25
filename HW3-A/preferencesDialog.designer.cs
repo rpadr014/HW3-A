@@ -62,16 +62,18 @@
             this.centerPanel.Controls.Add(this.heightLabel);
             this.centerPanel.Controls.Add(this.widthLabel);
             this.centerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.centerPanel.Location = new System.Drawing.Point(0, 57);
+            this.centerPanel.Location = new System.Drawing.Point(0, 70);
+            this.centerPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.centerPanel.Name = "centerPanel";
-            this.centerPanel.Size = new System.Drawing.Size(800, 219);
+            this.centerPanel.Size = new System.Drawing.Size(1067, 270);
             this.centerPanel.TabIndex = 2;
             // 
             // rText
             // 
-            this.rText.Location = new System.Drawing.Point(425, 139);
+            this.rText.Location = new System.Drawing.Point(567, 171);
+            this.rText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rText.Name = "rText";
-            this.rText.Size = new System.Drawing.Size(100, 20);
+            this.rText.Size = new System.Drawing.Size(132, 22);
             this.rText.TabIndex = 14;
             this.wTip.SetToolTip(this.rText, "Range: 1 - 5");
             this.rText.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.rText_HelpRequested);
@@ -80,9 +82,10 @@
             // 
             // hText
             // 
-            this.hText.Location = new System.Drawing.Point(425, 92);
+            this.hText.Location = new System.Drawing.Point(567, 113);
+            this.hText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.hText.Name = "hText";
-            this.hText.Size = new System.Drawing.Size(100, 20);
+            this.hText.Size = new System.Drawing.Size(132, 22);
             this.hText.TabIndex = 13;
             this.wTip.SetToolTip(this.hText, "Range: 1 - 500");
             this.hText.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.hText_HelpRequested);
@@ -92,9 +95,10 @@
             // wText
             // 
             this.wText.BackColor = System.Drawing.SystemColors.Window;
-            this.wText.Location = new System.Drawing.Point(425, 41);
+            this.wText.Location = new System.Drawing.Point(567, 50);
+            this.wText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.wText.Name = "wText";
-            this.wText.Size = new System.Drawing.Size(100, 20);
+            this.wText.Size = new System.Drawing.Size(132, 22);
             this.wText.TabIndex = 12;
             this.wTip.SetToolTip(this.wText, "Range: 1 - 500");
             this.wText.HelpRequested += new System.Windows.Forms.HelpEventHandler(this.wText_HelpRequested);
@@ -105,9 +109,10 @@
             // 
             this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(450, 180);
+            this.cancelButton.Location = new System.Drawing.Point(600, 222);
+            this.cancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.Size = new System.Drawing.Size(100, 28);
             this.cancelButton.TabIndex = 8;
             this.cancelButton.Text = "Cancel";
             this.wTip.SetToolTip(this.cancelButton, "Cancel");
@@ -117,9 +122,10 @@
             // applyButton
             // 
             this.applyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.applyButton.Location = new System.Drawing.Point(356, 180);
+            this.applyButton.Location = new System.Drawing.Point(475, 222);
+            this.applyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.applyButton.Name = "applyButton";
-            this.applyButton.Size = new System.Drawing.Size(75, 23);
+            this.applyButton.Size = new System.Drawing.Size(100, 28);
             this.applyButton.TabIndex = 7;
             this.applyButton.Text = "Apply";
             this.wTip.SetToolTip(this.applyButton, "Range(Width & Height): 1 - 500 Range(Ratio): 1 - 5");
@@ -130,9 +136,10 @@
             // 
             this.okayButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okayButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okayButton.Location = new System.Drawing.Point(262, 180);
+            this.okayButton.Location = new System.Drawing.Point(349, 222);
+            this.okayButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.okayButton.Name = "okayButton";
-            this.okayButton.Size = new System.Drawing.Size(75, 23);
+            this.okayButton.Size = new System.Drawing.Size(100, 28);
             this.okayButton.TabIndex = 6;
             this.okayButton.Text = "OK";
             this.wTip.SetToolTip(this.okayButton, "Range(Width & Height): 1 - 500 Range(Ratio): 1 - 5");
@@ -145,9 +152,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ratioLabel.AutoSize = true;
-            this.ratioLabel.Location = new System.Drawing.Point(259, 139);
+            this.ratioLabel.Location = new System.Drawing.Point(345, 171);
+            this.ratioLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ratioLabel.Name = "ratioLabel";
-            this.ratioLabel.Size = new System.Drawing.Size(38, 13);
+            this.ratioLabel.Size = new System.Drawing.Size(45, 16);
             this.ratioLabel.TabIndex = 2;
             this.ratioLabel.Text = "Ratio: ";
             // 
@@ -157,9 +165,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.heightLabel.AutoSize = true;
-            this.heightLabel.Location = new System.Drawing.Point(259, 95);
+            this.heightLabel.Location = new System.Drawing.Point(345, 117);
+            this.heightLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.heightLabel.Name = "heightLabel";
-            this.heightLabel.Size = new System.Drawing.Size(134, 13);
+            this.heightLabel.Size = new System.Drawing.Size(164, 16);
             this.heightLabel.TabIndex = 1;
             this.heightLabel.Text = "Height of Rectangle Child: ";
             // 
@@ -169,9 +178,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.widthLabel.AutoSize = true;
-            this.widthLabel.Location = new System.Drawing.Point(259, 41);
+            this.widthLabel.Location = new System.Drawing.Point(345, 50);
+            this.widthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.widthLabel.Name = "widthLabel";
-            this.widthLabel.Size = new System.Drawing.Size(109, 13);
+            this.widthLabel.Size = new System.Drawing.Size(133, 16);
             this.widthLabel.TabIndex = 0;
             this.widthLabel.Text = "Width of Elliptic Child:";
             // 
@@ -193,14 +203,14 @@
             // 
             // preferenceForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.centerPanel);
             this.HelpButton = true;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "preferenceForm";
@@ -208,6 +218,7 @@
             this.Activated += new System.EventHandler(this.preferenceForm_Activated);
             this.Deactivate += new System.EventHandler(this.preferenceForm_Deactivate);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.preferenceForm_FormClosed);
+            this.Load += new System.EventHandler(this.preferenceForm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyPressEvent);
             this.Controls.SetChildIndex(this.centerPanel, 0);
             this.centerPanel.ResumeLayout(false);
