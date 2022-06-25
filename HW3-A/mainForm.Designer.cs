@@ -296,7 +296,11 @@ namespace HW3_A
 
         private void OathToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
-            new oathDialog().ShowDialog();
+            oathDialog dialog = new oathDialog();
+            dialog.StartPosition = FormStartPosition.Manual;
+            dialog.Location = new System.Drawing.Point(this.Right - 12, this.Top);
+            this.AddOwnedForm(dialog);
+            dialog.ShowDialog();
         }
 
         #endregion
