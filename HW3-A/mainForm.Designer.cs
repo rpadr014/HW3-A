@@ -93,6 +93,8 @@ namespace HW3_A
             this.openEllipticChildToolStripMenuItem.Name = "openEllipticChildToolStripMenuItem";
             this.openEllipticChildToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.openEllipticChildToolStripMenuItem.Text = "Open Elliptic Child";
+            this.openEllipticChildToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.E;
+            this.openEllipticChildToolStripMenuItem.ShowShortcutKeys = true;
             this.openEllipticChildToolStripMenuItem.Click += new System.EventHandler(this.openEllipticChildToolStripMenuItem_Click);
             // 
             // openRectangularChildToolStripMenuItem
@@ -100,6 +102,8 @@ namespace HW3_A
             this.openRectangularChildToolStripMenuItem.Name = "openRectangularChildToolStripMenuItem";
             this.openRectangularChildToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.openRectangularChildToolStripMenuItem.Text = "Open Rectangular Child";
+            this.openRectangularChildToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.R;
+            this.openRectangularChildToolStripMenuItem.ShowShortcutKeys = true;
             this.openRectangularChildToolStripMenuItem.Click += new System.EventHandler(this.openRectangularChildToolStripMenuItem_Click);
             // 
             // closeAllRectangularChildrensToolStripMenuItem
@@ -107,6 +111,8 @@ namespace HW3_A
             this.closeAllRectangularChildrensToolStripMenuItem.Name = "closeAllRectangularChildrensToolStripMenuItem";
             this.closeAllRectangularChildrensToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.closeAllRectangularChildrensToolStripMenuItem.Text = "Close All Rectangular Children";
+            this.closeAllRectangularChildrensToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Alt | Keys.R;
+            this.closeAllRectangularChildrensToolStripMenuItem.ShowShortcutKeys = true;
             this.closeAllRectangularChildrensToolStripMenuItem.Click += new System.EventHandler(this.CloseAllRectangularChildrenToolStripMenuItem_Click);
             // 
             // closeAllEllipticalChildrenToolStripMenuItem
@@ -114,6 +120,8 @@ namespace HW3_A
             this.closeAllEllipticalChildrenToolStripMenuItem.Name = "closeAllEllipticalChildrenToolStripMenuItem";
             this.closeAllEllipticalChildrenToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.closeAllEllipticalChildrenToolStripMenuItem.Text = "Close All Elliptical Children";
+            this.closeAllEllipticalChildrenToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Alt | Keys.E;
+            this.closeAllEllipticalChildrenToolStripMenuItem.ShowShortcutKeys = true;
             this.closeAllEllipticalChildrenToolStripMenuItem.Click += new System.EventHandler(this.CloseAllEllipticalChildrenToolStripMenuItem_Click);
             // 
             // closeApplicationToolStripMenuItem
@@ -121,6 +129,8 @@ namespace HW3_A
             this.closeApplicationToolStripMenuItem.Name = "closeApplicationToolStripMenuItem";
             this.closeApplicationToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.closeApplicationToolStripMenuItem.Text = "Close Application";
+            this.closeApplicationToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Alt | Keys.A;
+            this.closeApplicationToolStripMenuItem.ShowShortcutKeys = true;
             this.closeApplicationToolStripMenuItem.Click += new System.EventHandler(this.CloseApplicationToolStripMenuItem_Click);
             // 
             // enableLogInToolStripMenuItem
@@ -128,6 +138,8 @@ namespace HW3_A
             this.enableLogInToolStripMenuItem.Name = "enableLogInToolStripMenuItem";
             this.enableLogInToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.enableLogInToolStripMenuItem.Text = "Enable Log In";
+            this.enableLogInToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.L;
+            this.enableLogInToolStripMenuItem.ShowShortcutKeys = true;
             this.enableLogInToolStripMenuItem.Click += new System.EventHandler(this.enableLogInToolStripMenuItem_Click);
             // 
             // preferencesToolStripMenuItem
@@ -153,13 +165,16 @@ namespace HW3_A
             this.modelesslyToolStripMenuItem});
             this.openPreferencesToolStripMenuItem.Name = "openPreferencesToolStripMenuItem";
             this.openPreferencesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.openPreferencesToolStripMenuItem.Text = "Open Preferences ";
+            this.openPreferencesToolStripMenuItem.Text = "Open Preferences";
+
             // 
             // modallyToolStripMenuItem
             // 
             this.modallyToolStripMenuItem.Name = "modallyToolStripMenuItem";
             this.modallyToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.modallyToolStripMenuItem.Text = "Modally";
+            this.modallyToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.M;
+            this.modallyToolStripMenuItem.ShowShortcutKeys = true;
             this.modallyToolStripMenuItem.Click += new System.EventHandler(this.modallyToolStripMenuItem_Click);
             // 
             // modelesslyToolStripMenuItem
@@ -167,6 +182,8 @@ namespace HW3_A
             this.modelesslyToolStripMenuItem.Name = "modelesslyToolStripMenuItem";
             this.modelesslyToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.modelesslyToolStripMenuItem.Text = "Modelessly";
+            this.modelesslyToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Shift | Keys.M;
+            this.modelesslyToolStripMenuItem.ShowShortcutKeys = true;
             this.modelesslyToolStripMenuItem.Click += new System.EventHandler(this.modelesslyToolStripMenuItem_Click);
             // 
             // openPreferencesModallyToolStripMenuItem
@@ -196,12 +213,16 @@ namespace HW3_A
             this.oathToolStripMenuItem.Name = "oathToolStripMenuItem";
             this.oathToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.oathToolStripMenuItem.Text = "Oath";
+            this.oathToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.O;
+            this.oathToolStripMenuItem.ShowShortcutKeys = true;
             this.oathToolStripMenuItem.Click += OathToolStripMenuItem_Click;
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.A;
+            this.aboutToolStripMenuItem.ShowShortcutKeys = true;
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // mainMenuStatusStrip
@@ -225,6 +246,8 @@ namespace HW3_A
             this.openCustomChildToolStripMenuItem.Name = "openCustomChildToolStripMenuItem";
             this.openCustomChildToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.openCustomChildToolStripMenuItem.Text = "Open Custom Child";
+            this.openCustomChildToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.C;
+            this.openCustomChildToolStripMenuItem.ShowShortcutKeys = true;
             this.openCustomChildToolStripMenuItem.Click += new System.EventHandler(this.openCustomChildToolStripMenuItem_Click);
             // 
             // closeAllCustomChildrenToolStripMenuItem
@@ -232,6 +255,8 @@ namespace HW3_A
             this.closeAllCustomChildrenToolStripMenuItem.Name = "closeAllCustomChildrenToolStripMenuItem";
             this.closeAllCustomChildrenToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.closeAllCustomChildrenToolStripMenuItem.Text = "Close All Custom Children";
+            this.closeAllCustomChildrenToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.C;
+            this.closeAllCustomChildrenToolStripMenuItem.ShowShortcutKeys = true;
             this.closeAllCustomChildrenToolStripMenuItem.Click += new System.EventHandler(this.closeAllCustomChildrenToolStripMenuItem_Click);
             // 
             // mainForm
