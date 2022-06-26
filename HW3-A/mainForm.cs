@@ -20,6 +20,8 @@ namespace HW3_A
         public int rectangleHeight { get; set; }
         public int ellipticWidth { get; set; }
         public float ratio { get; set; }
+        public bool pFormOpen = false;
+
         public mainForm()
         {
             InitializeComponent();
@@ -55,15 +57,27 @@ namespace HW3_A
 
         private void modallyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            preferenceForm preferenceForm = createPreferenceForm();
-            preferenceForm.hideApplyButton();
-            preferenceForm.ShowDialog();
+            if (pFormOpen)
+            {
+                   MessageBox.Show("Close Open Preference Dialog");
+            } else
+            {
+                preferenceForm preferenceForm = createPreferenceForm();
+                preferenceForm.hideApplyButton();
+                preferenceForm.ShowDialog();
+            }
         }
 
         private void modelesslyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            preferenceForm preferenceForm = createPreferenceForm();
-            preferenceForm.Show();
+            if (pFormOpen)
+            {
+                MessageBox.Show("Close Open Preference Dialog");
+            } else
+            {
+                preferenceForm preferenceForm = createPreferenceForm();
+                preferenceForm.Show();
+            }
         }
 
         private preferenceForm createPreferenceForm()
@@ -78,6 +92,17 @@ namespace HW3_A
             rectangleHeight = rHeight;
             ellipticWidth = eWidth;
             this.ratio = ratio;
+        }
+
+        public void updatePrefStatus()
+        {
+            if (pFormOpen)
+            {
+                pFormOpen = false;
+            } else
+            {
+                pFormOpen=true;
+            }
         }
 
         private void preferencesToolStripMenuItem_Click(object sender, EventArgs e)
