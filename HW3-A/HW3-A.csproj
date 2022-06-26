@@ -52,6 +52,12 @@
     <Compile Include="ellipticForm.Designer.cs">
       <DependentUpon>ellipticForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="aboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutDialog.Designer.cs">
+      <DependentUpon>aboutDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="oathDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ellipticForm.resx">
       <DependentUpon>ellipticForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aboutDialog.resx">
+      <DependentUpon>aboutDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginDialog.resx">
       <DependentUpon>loginDialog.cs</DependentUpon>
