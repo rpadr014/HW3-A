@@ -258,7 +258,7 @@ namespace HW3_A
             this.closeAllCustomChildrenToolStripMenuItem.Name = "closeAllCustomChildrenToolStripMenuItem";
             this.closeAllCustomChildrenToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.closeAllCustomChildrenToolStripMenuItem.Text = "Close All Custom Children";
-            this.closeAllCustomChildrenToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.C;
+            this.closeAllCustomChildrenToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Alt | Keys.C;
             this.closeAllCustomChildrenToolStripMenuItem.ShowShortcutKeys = true;
             this.closeAllCustomChildrenToolStripMenuItem.Click += new System.EventHandler(this.closeAllCustomChildrenToolStripMenuItem_Click);
             // 
