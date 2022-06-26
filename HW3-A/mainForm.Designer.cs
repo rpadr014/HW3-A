@@ -227,6 +227,7 @@ namespace HW3_A
             this.aboutToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.A;
             this.aboutToolStripMenuItem.ShowShortcutKeys = true;
             this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += AboutToolStripMenuItem_Click;
             // 
             // mainMenuStatusStrip
             // 
@@ -301,6 +302,16 @@ namespace HW3_A
             dialog.Location = new System.Drawing.Point(this.Right - 12, this.Top);
             this.AddOwnedForm(dialog);
             dialog.ShowDialog();
+        }
+
+
+        private void AboutToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            aboutDialog dialog = new aboutDialog();
+            dialog.StartPosition = FormStartPosition.Manual;
+            dialog.Location = new System.Drawing.Point(this.Left, this.Bottom - 5);
+            this.AddOwnedForm(dialog);
+            dialog.Show();
         }
 
         #endregion
