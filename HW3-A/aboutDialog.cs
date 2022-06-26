@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HW3_A
 {
-    public partial class Form1 : HE3_AControlLibrary.BaseDialog
+    public partial class aboutDialog : HE3_AControlLibrary.BaseDialog
     {
-        public Form1()
+        public aboutDialog()
         {
             InitializeComponent();
         }

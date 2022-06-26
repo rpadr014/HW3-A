@@ -7,7 +7,7 @@ using HE3_AControlLibrary;
 
 namespace HW3_A
 {
-    partial class Form1
+    partial class aboutDialog
     {
         /// <summary>
         /// Required designer variable.
