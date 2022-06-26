@@ -64,6 +64,12 @@
     <Compile Include="oathDialog.Designer.cs">
       <DependentUpon>oathDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomForm.Designer.cs">
+      <DependentUpon>CustomForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="loginDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CustomForm.resx">
+      <DependentUpon>CustomForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ellipticForm.resx">
       <DependentUpon>ellipticForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +155,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\headphones.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Initials_Icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

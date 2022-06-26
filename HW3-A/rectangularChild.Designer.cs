@@ -36,10 +36,14 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(411, 299);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "rectangularChild";
+            this.Activated += new System.EventHandler(this.rectangularChild_Activated);
+            this.Deactivate += new System.EventHandler(this.rectangularChild_Deactivate);
             this.Load += new System.EventHandler(this.rectangularChild_Load);
+            this.BackColorChanged += new System.EventHandler(this.rectangularChild_BackColorChanged);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

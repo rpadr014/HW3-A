@@ -11,63 +11,63 @@ using System.Drawing.Drawing2D;
 
 namespace HW3_A
 {
-    public partial class ellipticForm : HE3_AControlLibrary.BaseForm
+    public partial class CustomForm : HE3_AControlLibrary.BaseForm
     {
-        public float eRatio { get; set; }
-        public int eWidth { get; set; }
-        public float eHeight { get; set; }
+        public float cRatio { get; set; }
+        public int cWidth { get; set; }
+        public int cHeight { get; set; }
 
-        public ellipticForm()
+        public CustomForm()
         {
             InitializeComponent();
         }
 
-        public ellipticForm(float ellipseratio, int ellipsewidth)
+        public CustomForm(float customRatio, int customHeight)
         {
-            eRatio = ellipseratio;
-            eWidth = ellipsewidth;
-            eHeight = (float)eWidth * eRatio;
+            cRatio = customRatio;
+            cHeight = customHeight;
+            cWidth = (int)(cHeight * cRatio);
 
             InitializeComponent();
         }
 
-        void SetEllipseRegion()
+        void SetCustomRegion()
         {
-            this.ClientSize = new System.Drawing.Size(eWidth, Convert.ToInt32(eHeight));
+            this.ClientSize = new System.Drawing.Size(cWidth, Convert.ToInt32(cHeight));
             Rectangle rect = this.ClientRectangle;
             using (GraphicsPath path = new GraphicsPath())
             {
                 path.AddEllipse(rect);
+                path.AddRectangle(rect);
                 this.Region = new Region(path);
             }
         }
 
-        private void ellipticForm_Load(object sender, EventArgs e)
+        private void CustomForm_Load(object sender, EventArgs e)
         {
-            SetEllipseRegion();
+            SetCustomRegion();
         }
 
-        private void ellipticForm_SizeChanged(object sender, EventArgs e)
+        private void CustomForm_SizeChanged(object sender, EventArgs e)
         {
-            SetEllipseRegion();
+            SetCustomRegion();
         }
 
-
-        private void ellipticForm_Activated(object sender, EventArgs e)
+        private void CustomForm_Activated(object sender, EventArgs e)
         {
             mainForm owner = (mainForm)this.Owner;
             owner.changeStatusBackgroundColor(this.BackColor);
-            owner.focusOnElliptic(true);
+            owner.focusOnCustom(true);
         }
 
-        private void ellipticForm_Deactivate(object sender, EventArgs e)
+        private void CustomForm_Deactivate(object sender, EventArgs e)
         {
             mainForm owner = (mainForm)this.Owner;
             owner.changeStatusBackgroundColor(Color.White);
-            owner.focusOnElliptic(false);
+            owner.focusOnCustom(false);
         }
 
-        private void ellipticForm_BackColorChanged(object sender, EventArgs e)
+        private void CustomForm_BackColorChanged(object sender, EventArgs e)
         {
             mainForm owner = (mainForm)this.Owner;
             owner.changeStatusBackgroundColor(this.BackColor);

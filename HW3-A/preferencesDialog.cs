@@ -167,11 +167,12 @@ namespace HW3_A
         private void preferenceForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             //MessageBox.Show("Close using Okay/Cancel");
+            mainFormInstance.updatePrefStatus();
         }
 
         private void preferenceForm_Load(object sender, EventArgs e)
         {
-
+            mainFormInstance.updatePrefStatus();
         }
     }
 }
