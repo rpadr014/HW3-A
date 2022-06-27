@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>In this assignment, we created an application that requres the user's agreement to run this application.
+Once the user is running this application, the user can create multiple child windows that are either ellipses, rectangle or 
+custom shapes.
+
+The user has the ability to set the preferred width, height and ratio of the chilld windows, as well as select a preffered 
+color background</value>
+  </data>
 </root>

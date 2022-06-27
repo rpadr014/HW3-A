@@ -71,11 +71,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(51, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 52);
+            this.label1.Size = new System.Drawing.Size(222, 52);
             this.label1.TabIndex = 3;
-            this.label1.Text = "test\r\nlabel\r\ntest\r\nlabel\r\n";
+            this.label1.Text = "You\'re about to run this application\r\n\r\nAre you sure you\'d like to run this appli" +
+    "cation?\r\n\r\n";
             // 
             // loginDialog
             // 
@@ -87,7 +88,7 @@
             this.Controls.Add(this.noButton);
             this.Controls.Add(this.yesButton);
             this.Name = "loginDialog";
-            this.Text = "loginDialog";
+            this.Text = "User Agreement";
             this.ResumeLayout(false);
             this.PerformLayout();
 
