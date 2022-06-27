@@ -151,7 +151,6 @@ namespace HW3_A
             this.preferencesToolStripMenuItem.Name = "preferencesToolStripMenuItem";
             this.preferencesToolStripMenuItem.Size = new System.Drawing.Size(80, 22);
             this.preferencesToolStripMenuItem.Text = "Preferences";
-            this.preferencesToolStripMenuItem.Click += new System.EventHandler(this.preferencesToolStripMenuItem_Click);
             // 
             // mainMenuContextStrip
             // 
@@ -200,7 +199,6 @@ namespace HW3_A
             this.mToolStripMenuItem.Name = "mToolStripMenuItem";
             this.mToolStripMenuItem.Size = new System.Drawing.Size(292, 32);
             this.mToolStripMenuItem.Text = "M";
-            this.mToolStripMenuItem.Click += new System.EventHandler(this.mToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -328,7 +326,6 @@ namespace HW3_A
         private System.Windows.Forms.ToolStripMenuItem openPreferencesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modallyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openPreferencesModallyToolStripMenuItem;
-        //private System.Windows.Forms.ToolStripMenuItem openPreferencesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem mToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip mainMenuContextStrip;
         private System.Windows.Forms.ToolStripMenuItem modelesslyToolStripMenuItem;
@@ -341,8 +338,6 @@ namespace HW3_A
         private ToolStripMenuItem openCustomChildToolStripMenuItem;
         private ToolStripMenuItem closeAllCustomChildrenToolStripMenuItem;
         private ToolStripMenuItem closeAllOpenChildrenToolStripMenuItem;
-        //private System.Windows.Forms.Label label1;
-        //private System.Windows.Forms.Label label2;
     }
 }
 

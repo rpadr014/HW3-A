@@ -64,10 +64,5 @@ namespace HE3_AControlLibrary
         {
             this.Close();
         }
-
-        private void preferencesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -50,11 +50,6 @@ namespace HW3_A
             ratio = preferenceForm.ratio;
         }
 
-        private void mToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void modallyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (pFormOpen)
@@ -103,11 +98,6 @@ namespace HW3_A
             {
                 pFormOpen=true;
             }
-        }
-
-        private void preferencesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void openEllipticChildToolStripMenuItem_Click(object sender, EventArgs e)
