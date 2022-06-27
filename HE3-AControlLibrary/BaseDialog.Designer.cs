@@ -38,10 +38,10 @@
             this.nameControl.BackColor = System.Drawing.Color.Azure;
             this.nameControl.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.nameControl.ForeColor = System.Drawing.Color.Black;
-            this.nameControl.Location = new System.Drawing.Point(0, 340);
-            this.nameControl.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.nameControl.Location = new System.Drawing.Point(0, 276);
+            this.nameControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nameControl.Name = "nameControl";
-            this.nameControl.Size = new System.Drawing.Size(1067, 214);
+            this.nameControl.Size = new System.Drawing.Size(800, 174);
             this.nameControl.TabIndex = 0;
             // 
             // courseControl
@@ -49,30 +49,28 @@
             this.courseControl.BackColor = System.Drawing.Color.Transparent;
             this.courseControl.Dock = System.Windows.Forms.DockStyle.Top;
             this.courseControl.Location = new System.Drawing.Point(0, 0);
-            this.courseControl.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.courseControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.courseControl.Name = "courseControl";
-            this.courseControl.Size = new System.Drawing.Size(1067, 70);
+            this.courseControl.Size = new System.Drawing.Size(800, 57);
             this.courseControl.TabIndex = 1;
             // 
             // midPanel
             // 
             this.midPanel.BackColor = System.Drawing.Color.Transparent;
             this.midPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.midPanel.Location = new System.Drawing.Point(0, 70);
-            this.midPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.midPanel.Location = new System.Drawing.Point(0, 57);
             this.midPanel.Name = "midPanel";
-            this.midPanel.Size = new System.Drawing.Size(1067, 270);
+            this.midPanel.Size = new System.Drawing.Size(800, 219);
             this.midPanel.TabIndex = 2;
             // 
             // BaseDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.midPanel);
             this.Controls.Add(this.courseControl);
             this.Controls.Add(this.nameControl);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "BaseDialog";
             this.Text = "Base Dialog";
             this.Load += new System.EventHandler(this.BaseDialog_Load);

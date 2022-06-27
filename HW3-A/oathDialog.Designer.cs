@@ -35,37 +35,54 @@ namespace HW3_A
         /// </summary>
         private void InitializeComponent()
         {
-            this.oathControl = new HE3_AControlLibrary.OathControl();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.oathControl1 = new HE3_AControlLibrary.OathControl();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // oathControl
+            // panel1
             // 
-            this.oathControl.BackColor = System.Drawing.Color.Transparent;
-            this.oathControl.Location = new System.Drawing.Point(0, 0);
-            this.oathControl.Name = "oathControl";
-            this.oathControl.Size = new System.Drawing.Size(866, 490);
-            this.oathControl.TabIndex = 0;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.oathControl1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 57);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(803, 201);
+            this.panel1.TabIndex = 3;
+            // 
+            // oathControl1
+            // 
+            this.oathControl1.BackColor = System.Drawing.Color.Transparent;
+            this.oathControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.oathControl1.Location = new System.Drawing.Point(0, 0);
+            this.oathControl1.Name = "oathControl1";
+            this.oathControl1.Size = new System.Drawing.Size(803, 201);
+            this.oathControl1.TabIndex = 0;
             // 
             // oathDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::HW3_A.Properties.Resources.headphones;
-            this.ClientSize = new System.Drawing.Size(866, 490);
-            this.Controls.Add(this.oathControl);
+            this.ClientSize = new System.Drawing.Size(803, 432);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "oathDialog";
             this.ShowIcon = false;
             this.Text = "OathDialog";
             this.Load += new System.EventHandler(this.oathDialog_Load);
-            this.Controls.SetChildIndex(this.oathControl, 0);
+            this.Controls.SetChildIndex(this.panel1, 0);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private HE3_AControlLibrary.OathControl oathControl;
+        private Panel panel1;
+        private OathControl oathControl1;
     }
 }
