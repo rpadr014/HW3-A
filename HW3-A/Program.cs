@@ -23,8 +23,10 @@ namespace HW3_A
                 {
                     result = loginDlg.ShowDialog();
                 }
+
                 if (result == DialogResult.OK)
                 {
+                    System.Diagnostics.Debug.WriteLine("Send to debug output.");
                     Application.Run(new mainForm());
                 }
             }

@@ -19,12 +19,13 @@ namespace HW3_A
 
         private void yesButton_Click(object sender, EventArgs e)
         {
-            yesButton.DialogResult = DialogResult.OK;
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
 
         private void noButton_Click(object sender, EventArgs e)
         {
-            noButton.DialogResult = DialogResult.Cancel;
+            this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
 
