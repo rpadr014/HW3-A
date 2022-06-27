@@ -43,22 +43,23 @@ namespace HW3_A
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.descLabel);
-            this.panel1.Location = new System.Drawing.Point(101, 90);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 57);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 135);
+            this.panel1.Size = new System.Drawing.Size(803, 201);
             this.panel1.TabIndex = 3;
             // 
             // descLabel
             // 
+            this.descLabel.BackColor = System.Drawing.Color.PowderBlue;
             this.descLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.descLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descLabel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.descLabel.ForeColor = System.Drawing.Color.Black;
             this.descLabel.Location = new System.Drawing.Point(0, 0);
             this.descLabel.Name = "descLabel";
-            this.descLabel.Size = new System.Drawing.Size(600, 135);
+            this.descLabel.Size = new System.Drawing.Size(803, 201);
             this.descLabel.TabIndex = 0;
             this.descLabel.Text = resources.GetString("descLabel.Text");
             this.descLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
