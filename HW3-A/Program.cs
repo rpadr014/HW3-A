@@ -26,7 +26,6 @@ namespace HW3_A
 
                 if (result == DialogResult.OK)
                 {
-                    System.Diagnostics.Debug.WriteLine("Send to debug output.");
                     Application.Run(new mainForm());
                 }
             }
